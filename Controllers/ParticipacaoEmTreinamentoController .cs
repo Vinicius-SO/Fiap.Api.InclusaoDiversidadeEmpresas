@@ -24,8 +24,10 @@ namespace Fiap.Api.InclusaoDiversidadeEmpresas.Controllers
 
         // GET: api/participacaoemtreinamento/{id}
         [HttpGet("{id}")]
-        public async Task<ActionResult<ParticipacaoEmTreinamentoModel>> GetParticipacao(int id)
+        // CORREÇÃO: Usando long
+        public async Task<ActionResult<ParticipacaoEmTreinamentoModel>> GetParticipacao(long id)
         {
+            // O Service deve aceitar long aqui!
             var participacao = await _participacaoService.ObterParticipacaoEmTreinamentoServicePorId(id);
 
             if (participacao == null)
@@ -46,8 +48,9 @@ namespace Fiap.Api.InclusaoDiversidadeEmpresas.Controllers
 
         // PUT: api/participacaoemtreinamento/{id}
         [HttpPut("{id}")]
+        // CORREÇÃO: Usando long
         public async Task<ActionResult<ParticipacaoEmTreinamentoModel>> PutParticipacao(
-            int id,
+            long id,
             ParticipacaoEmTreinamentoModel participacao)
         {
             if (id != participacao.Id)
@@ -63,8 +66,10 @@ namespace Fiap.Api.InclusaoDiversidadeEmpresas.Controllers
 
         // DELETE: api/participacaoemtreinamento/{id}
         [HttpDelete("{id}")]
-        public async Task<IActionResult> DeleteParticipacao(int id)
+        // CORREÇÃO: Usando long
+        public async Task<IActionResult> DeleteParticipacao(long id)
         {
+            // O Service deve aceitar long aqui!
             var removido = await _participacaoService.DeletarParticipacaoEmTreinamentoService(id);
 
             if (!removido)

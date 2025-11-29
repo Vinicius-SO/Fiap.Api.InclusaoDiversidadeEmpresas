@@ -26,8 +26,10 @@ namespace Fiap.Api.InclusaoDiversidadeEmpresas.Controllers
 
         // GET: api/treinamento/{id}
         [HttpGet("{id}")]
-        public async Task<ActionResult<TreinamentoModel>> GetTreinamento(int id)
+        // CORREÇÃO: Tipo alterado de int para long.
+        public async Task<ActionResult<TreinamentoModel>> GetTreinamento(long id)
         {
+            // O Service também deve aceitar long aqui!
             var treinamento = await _treinamentoService.ObterTreinamentoPorId(id);
 
             if (treinamento == null)
@@ -47,7 +49,8 @@ namespace Fiap.Api.InclusaoDiversidadeEmpresas.Controllers
 
         // PUT: api/treinamento/{id}
         [HttpPut("{id}")]
-        public async Task<ActionResult<TreinamentoModel>> PutTreinamento(int id, TreinamentoModel treinamento)
+        // CORREÇÃO: Tipo alterado de int para long.
+        public async Task<ActionResult<TreinamentoModel>> PutTreinamento(long id, TreinamentoModel treinamento)
         {
             if (id != treinamento.Id)
                 return BadRequest("O ID informado não corresponde ao objeto enviado.");
@@ -62,8 +65,10 @@ namespace Fiap.Api.InclusaoDiversidadeEmpresas.Controllers
 
         // DELETE: api/treinamento/{id}
         [HttpDelete("{id}")]
-        public async Task<IActionResult> DeleteTreinamento(int id)
+        // CORREÇÃO: Tipo alterado de int para long.
+        public async Task<IActionResult> DeleteTreinamento(long id)
         {
+            // O Service também deve aceitar long aqui!
             var removido = await _treinamentoService.DeletarTreinamento(id);
 
             if (!removido)

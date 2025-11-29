@@ -3,11 +3,19 @@ using Fiap.Api.InclusaoDiversidadeEmpresas.Services;
 using InclusaoDiversidadeEmpresas.Data;
 using InclusaoDiversidadeEmpresas.Services;
 using Microsoft.EntityFrameworkCore;
+using System.Text.Json.Serialization;
 
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
-builder.Services.AddControllers();
+// CORREÇÃO: Adicionando AddJsonOptions para resolver o ciclo de objetos
+builder.Services.AddControllers()
+    .AddJsonOptions(options =>
+    {
+        // Esta linha resolve o erro "A possible object cycle was detected"
+        options.JsonSerializerOptions.ReferenceHandler = ReferenceHandler.IgnoreCycles;
+    });
+
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
@@ -45,6 +53,7 @@ builder.Services.AddSingleton(mapper);
 
 var app = builder.Build();
 
+// Configure the HTTP request pipeline.
 if (app.Environment.IsDevelopment())
 {
     app.UseSwagger();

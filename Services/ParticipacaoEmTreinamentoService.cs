@@ -39,7 +39,7 @@ namespace Fiap.Api.InclusaoDiversidadeEmpresas.Services
             return participacaoEmTreinamento;
         }
 
-        public async Task<bool> DeletarParticipacaoEmTreinamentoService(int id)
+        public async Task<bool> DeletarParticipacaoEmTreinamentoService(long id)
         {
             var participacaoEmTreinamento = await _databaseContext.ParticipacoesEmTreinamento.FindAsync(id);
             if (participacaoEmTreinamento == null)
@@ -60,7 +60,7 @@ namespace Fiap.Api.InclusaoDiversidadeEmpresas.Services
                 .ToListAsync();
         }
 
-        public async Task<ParticipacaoEmTreinamentoModel?> ObterParticipacaoEmTreinamentoServicePorId(int id)
+        public async Task<ParticipacaoEmTreinamentoModel?> ObterParticipacaoEmTreinamentoServicePorId(long id)
         {
             return await _databaseContext.ParticipacoesEmTreinamento
                 .Include(p => p.Colaborador)
