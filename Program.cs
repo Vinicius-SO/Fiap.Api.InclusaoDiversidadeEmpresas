@@ -1,20 +1,27 @@
-using AutoMapper;
+﻿using AutoMapper;
 using Fiap.Api.InclusaoDiversidadeEmpresas.Services;
 using InclusaoDiversidadeEmpresas.Data;
 using InclusaoDiversidadeEmpresas.Services;
 using Microsoft.EntityFrameworkCore;
 using System.Text.Json.Serialization;
 
+// 🔑 USINGS NECESSÁRIOS PARA JWT
+using Microsoft.AspNetCore.Authentication.JwtBearer;
+using Microsoft.IdentityModel.Tokens;
+using System.Text;
+using System;
+
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
-// CORRE��O: Adicionando AddJsonOptions para resolver o ciclo de objetos
+// CORREÇÃO: Adicionando AddJsonOptions para resolver o ciclo de objetos
 builder.Services.AddControllers()
-    .AddJsonOptions(options =>
-    {
-        // Esta linha resolve o erro "A possible object cycle was detected"
-        options.JsonSerializerOptions.ReferenceHandler = ReferenceHandler.IgnoreCycles;
-    });
+  .AddJsonOptions(options =>
+  {
+      // Esta linha resolve o erro "A possible object cycle was detected"
+      options.JsonSerializerOptions.ReferenceHandler = ReferenceHandler.IgnoreCycles;
+  });
 
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
@@ -24,14 +31,16 @@ builder.Services.AddScoped<IColaboradorService, ColaboradorService>();
 builder.Services.AddScoped<IParticipacaoEmTreinamentoService, ParticipacaoEmTreinamentoService>();
 builder.Services.AddScoped<IRelatorioService, RelatorioService>();
 builder.Services.AddScoped<ITreinamentoService, TreinamentoService>();
+
+builder.Services.AddScoped<IAuthService, AuthService>();
 #endregion
 
 #region Configuracao do banco de dados
 var connectionString = builder.Configuration.GetConnectionString("DatabaseConnection");
 
 builder.Services.AddDbContext<DatabaseContext>(opt =>
-    opt.UseOracle(connectionString)
-       .EnableSensitiveDataLogging(true)
+  opt.UseOracle(connectionString)
+   .EnableSensitiveDataLogging(true)
 );
 #endregion
 
@@ -42,8 +51,7 @@ var mapperConfig = new MapperConfiguration(c =>
     c.AllowNullCollections = true;
     c.AllowNullDestinationValues = true;
 
-    // Adicione seus profiles aqui:
-    // c.AddProfile<SeuProfile>();
+
 });
 
 IMapper mapper = mapperConfig.CreateMapper();
@@ -51,9 +59,34 @@ builder.Services.AddSingleton(mapper);
 
 #endregion
 
+var key = Encoding.ASCII.GetBytes(builder.Configuration["JwtSettings:SecretKey"]);
+
+builder.Services.AddAuthentication(x =>
+{
+    // Define o JWT Bearer como o esquema padrão
+    x.DefaultAuthenticateScheme = JwtBearerDefaults.AuthenticationScheme;
+    x.DefaultChallengeScheme = JwtBearerDefaults.AuthenticationScheme;
+})
+.AddJwtBearer(x =>
+{
+    x.RequireHttpsMetadata = false; // Mantenha false para localhost/http
+    x.SaveToken = true;
+    x.TokenValidationParameters = new TokenValidationParameters
+    {
+        ValidateIssuerSigningKey = true,
+        IssuerSigningKey = new SymmetricSecurityKey(key),
+        ValidateIssuer = true,
+        ValidIssuer = builder.Configuration["JwtSettings:Issuer"],
+        ValidateAudience = true,
+        ValidAudience = builder.Configuration["JwtSettings:Audience"],
+        ValidateLifetime = true, // Valida se o token expirou
+        ClockSkew = TimeSpan.Zero // Sem tolerância de tempo para expiração
+    };
+});
+
+
 var app = builder.Build();
 
-// Configure the HTTP request pipeline.
 if (app.Environment.IsDevelopment())
 {
     app.UseSwagger();
@@ -62,7 +95,9 @@ if (app.Environment.IsDevelopment())
 
 app.UseHttpsRedirection();
 
-app.UseAuthorization();
+
+app.UseAuthentication();
+app.UseAuthorization(); 
 
 app.MapControllers();
 

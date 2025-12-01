@@ -246,3 +246,11 @@ C:\Users\Pichau\source\repos\Fiap.Api.InclusaoDiversidadeEmpresas\obj\Debug\net8
 C:\Users\Pichau\source\repos\Fiap.Api.InclusaoDiversidadeEmpresas\obj\Debug\net8.0\Fiap.Api.InclusaoDiversidadeEmpresas.pdb
 C:\Users\Pichau\source\repos\Fiap.Api.InclusaoDiversidadeEmpresas\obj\Debug\net8.0\Fiap.Api.InclusaoDiversidadeEmpresas.genruntimeconfig.cache
 C:\Users\Pichau\source\repos\Fiap.Api.InclusaoDiversidadeEmpresas\obj\Debug\net8.0\ref\Fiap.Api.InclusaoDiversidadeEmpresas.dll
+C:\Users\Pichau\source\repos\Fiap.Api.InclusaoDiversidadeEmpresas\bin\Debug\net8.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+C:\Users\Pichau\source\repos\Fiap.Api.InclusaoDiversidadeEmpresas\bin\Debug\net8.0\Microsoft.IdentityModel.Abstractions.dll
+C:\Users\Pichau\source\repos\Fiap.Api.InclusaoDiversidadeEmpresas\bin\Debug\net8.0\Microsoft.IdentityModel.JsonWebTokens.dll
+C:\Users\Pichau\source\repos\Fiap.Api.InclusaoDiversidadeEmpresas\bin\Debug\net8.0\Microsoft.IdentityModel.Logging.dll
+C:\Users\Pichau\source\repos\Fiap.Api.InclusaoDiversidadeEmpresas\bin\Debug\net8.0\Microsoft.IdentityModel.Protocols.dll
+C:\Users\Pichau\source\repos\Fiap.Api.InclusaoDiversidadeEmpresas\bin\Debug\net8.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+C:\Users\Pichau\source\repos\Fiap.Api.InclusaoDiversidadeEmpresas\bin\Debug\net8.0\Microsoft.IdentityModel.Tokens.dll
+C:\Users\Pichau\source\repos\Fiap.Api.InclusaoDiversidadeEmpresas\bin\Debug\net8.0\System.IdentityModel.Tokens.Jwt.dll

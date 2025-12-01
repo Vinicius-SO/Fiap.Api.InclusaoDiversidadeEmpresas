@@ -38,20 +38,22 @@ namespace Fiap.Api.InclusaoDiversidadeEmpresas.Services
         }
 
 
-
         public async Task<bool> DeletarTreinamento(long id)
         {
-           
-            var treinamento = await _databaseContext.Treinamentos
-                .Include(t => t.Participacao) 
-                .FirstOrDefaultAsync(t => t.Id == id);
+            var treinamento = await _databaseContext.Treinamentos.FindAsync(id);
+
 
             if (treinamento == null)
-            {
                 return false;
-            }
+
+            // remover participações primeiro
+            var participacoes = _databaseContext.ParticipacoesEmTreinamento
+                .Where(p => p.TreinamentoId == id);
+
+            _databaseContext.ParticipacoesEmTreinamento.RemoveRange(participacoes);
 
             _databaseContext.Treinamentos.Remove(treinamento);
+
 
            
             try
@@ -64,6 +66,10 @@ namespace Fiap.Api.InclusaoDiversidadeEmpresas.Services
               
                 throw;
             }
+
+            await _databaseContext.SaveChangesAsync();
+            return true;
+
         }
 
         public async Task<IEnumerable<TreinamentoModel>> ListarTreinamentos()

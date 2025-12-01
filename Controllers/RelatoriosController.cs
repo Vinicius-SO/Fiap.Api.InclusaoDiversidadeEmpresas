@@ -1,16 +1,18 @@
 ﻿using InclusaoDiversidadeEmpresas.Services;
 using Microsoft.AspNetCore.Mvc;
 using System.Threading.Tasks;
+using Microsoft.AspNetCore.Authorization; 
 
 namespace InclusaoDiversidadeEmpresas.Controllers
 {
-    [Route("api/[controller]")] // Define a rota base como /api/Relatorios
+    [Route("api/[controller]")] 
     [ApiController]
+    [Authorize]
     public class RelatoriosController : ControllerBase
     {
         private readonly IRelatorioService _relatorioService;
 
-        // Injeção de Dependência do Serviço de Relatório
+       
         public RelatoriosController(IRelatorioService relatorioService)
         {
             _relatorioService = relatorioService;
@@ -18,6 +20,7 @@ namespace InclusaoDiversidadeEmpresas.Controllers
 
         // Endpoint: GET /api/Relatorios/diversidade
         [HttpGet("diversidade")]
+        [Authorize(Roles = "Admin")] 
         public async Task<IActionResult> GetRelatorioDiversidade()
         {
             var relatorio = await _relatorioService.GerarRelatorioAsync();

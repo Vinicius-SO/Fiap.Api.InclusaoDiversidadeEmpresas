@@ -5,6 +5,37 @@
     "version": "1.0"
   },
   "paths": {
+    "/api/Auth/login": {
+      "post": {
+        "tags": [
+          "Auth"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/LoginModel"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/LoginModel"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/LoginModel"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
     "/api/Colaboradores": {
       "post": {
         "tags": [
@@ -128,27 +159,6 @@
           }
         }
       },
-      "delete": {
-        "tags": [
-          "Colaboradores"
-        ],
-        "parameters": [
-          {
-            "name": "id",
-            "in": "path",
-            "required": true,
-            "schema": {
-              "type": "integer",
-              "format": "int64"
-            }
-          }
-        ],
-        "responses": {
-          "200": {
-            "description": "Success"
-          }
-        }
-      },
       "put": {
         "tags": [
           "Colaboradores"
@@ -183,6 +193,27 @@
             }
           }
         },
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "Colaboradores"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int64"
+            }
+          }
+        ],
         "responses": {
           "200": {
             "description": "Success"
@@ -656,6 +687,25 @@
         },
         "additionalProperties": false
       },
+      "LoginModel": {
+        "required": [
+          "email",
+          "senha"
+        ],
+        "type": "object",
+        "properties": {
+          "email": {
+            "minLength": 1,
+            "type": "string",
+            "format": "email"
+          },
+          "senha": {
+            "minLength": 1,
+            "type": "string"
+          }
+        },
+        "additionalProperties": false
+      },
       "ParticipacaoEmTreinamentoModel": {
         "type": "object",
         "properties": {
@@ -667,15 +717,9 @@
             "type": "integer",
             "format": "int64"
           },
-          "colaborador": {
-            "$ref": "#/components/schemas/Colaborador"
-          },
           "treinamentoId": {
             "type": "integer",
             "format": "int64"
-          },
-          "treinamento": {
-            "$ref": "#/components/schemas/TreinamentoModel"
           },
           "completo": {
             "type": "boolean"
