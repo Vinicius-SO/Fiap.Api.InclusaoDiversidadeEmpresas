@@ -1,11 +1,13 @@
 ﻿using Fiap.Api.InclusaoDiversidadeEmpresas.Services;
 using InclusaoDiversidadeEmpresas.Models;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Authorization; 
 
 namespace Fiap.Api.InclusaoDiversidadeEmpresas.Controllers
 {
     [ApiController]
     [Route("api/[controller]")]
+    [Authorize]
     public class ParticipacaoEmTreinamentoController : ControllerBase
     {
         private readonly IParticipacaoEmTreinamentoService _participacaoService;
@@ -14,6 +16,7 @@ namespace Fiap.Api.InclusaoDiversidadeEmpresas.Controllers
         {
             _participacaoService = participacaoService;
         }
+
 
         // GET: api/participacaoemtreinamento
         [HttpGet]
@@ -24,7 +27,7 @@ namespace Fiap.Api.InclusaoDiversidadeEmpresas.Controllers
 
         // GET: api/participacaoemtreinamento/{id}
         [HttpGet("{id}")]
-        public async Task<ActionResult<ParticipacaoEmTreinamentoModel>> GetParticipacao(int id)
+        public async Task<ActionResult<ParticipacaoEmTreinamentoModel>> GetParticipacao(long id)
         {
             var participacao = await _participacaoService.ObterParticipacaoEmTreinamentoServicePorId(id);
 
@@ -33,6 +36,8 @@ namespace Fiap.Api.InclusaoDiversidadeEmpresas.Controllers
 
             return Ok(participacao);
         }
+
+    
 
         // POST: api/participacaoemtreinamento
         [HttpPost]
@@ -44,10 +49,12 @@ namespace Fiap.Api.InclusaoDiversidadeEmpresas.Controllers
             return CreatedAtAction(nameof(GetParticipacao), new { id = criado.Id }, criado);
         }
 
+     
+
         // PUT: api/participacaoemtreinamento/{id}
         [HttpPut("{id}")]
         public async Task<ActionResult<ParticipacaoEmTreinamentoModel>> PutParticipacao(
-            int id,
+            long id,
             ParticipacaoEmTreinamentoModel participacao)
         {
             if (id != participacao.Id)
@@ -61,9 +68,11 @@ namespace Fiap.Api.InclusaoDiversidadeEmpresas.Controllers
             return Ok(atualizado);
         }
 
+
         // DELETE: api/participacaoemtreinamento/{id}
         [HttpDelete("{id}")]
-        public async Task<IActionResult> DeleteParticipacao(int id)
+        [Authorize(Roles = "Admin")] 
+        public async Task<IActionResult> DeleteParticipacao(long id)
         {
             var removido = await _participacaoService.DeletarParticipacaoEmTreinamentoService(id);
 
