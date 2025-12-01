@@ -8,6 +8,6 @@ namespace Fiap.Api.InclusaoDiversidadeEmpresas.Services
         Task<TreinamentoModel?> ObterTreinamentoPorId(int id);
         Task<TreinamentoModel> CriarTreinamento(TreinamentoModel treinamento);
         Task<TreinamentoModel?> AtualizarTreinamento(TreinamentoModel treinamento);
-        Task<bool> DeletarTreinamento(int id);
+        Task<bool> DeletarTreinamento(long id);
     }
 }

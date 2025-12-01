@@ -1,5 +1,6 @@
 ﻿using System;
-using System.ComponentModel.DataAnnotations.Schema; 
+using System.ComponentModel.DataAnnotations.Schema;
+using System.Text.Json.Serialization;
 
 namespace InclusaoDiversidadeEmpresas.Models
 {
@@ -7,13 +8,13 @@ namespace InclusaoDiversidadeEmpresas.Models
     {
         public long Id { get; set; }
 
-      
         public long ColaboradorId { get; set; }
-      
+        [JsonIgnore]
         public Colaborador? Colaborador { get; set; }
 
         public long TreinamentoId { get; set; }
-     
+
+        [JsonIgnore]
         public TreinamentoModel? Treinamento { get; set; }
 
         public bool Completo { get; set; }

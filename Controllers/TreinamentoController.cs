@@ -62,7 +62,7 @@ namespace Fiap.Api.InclusaoDiversidadeEmpresas.Controllers
 
         // DELETE: api/treinamento/{id}
         [HttpDelete("{id}")]
-        public async Task<IActionResult> DeleteTreinamento(int id)
+        public async Task<IActionResult> DeleteTreinamento(long id)
         {
             var removido = await _treinamentoService.DeletarTreinamento(id);
 

@@ -595,7 +595,7 @@
             "required": true,
             "schema": {
               "type": "integer",
-              "format": "int32"
+              "format": "int64"
             }
           }
         ],
@@ -667,15 +667,9 @@
             "type": "integer",
             "format": "int64"
           },
-          "colaborador": {
-            "$ref": "#/components/schemas/Colaborador"
-          },
           "treinamentoId": {
             "type": "integer",
             "format": "int64"
-          },
-          "treinamento": {
-            "$ref": "#/components/schemas/TreinamentoModel"
           },
           "completo": {
             "type": "boolean"
