@@ -10,6 +10,10 @@ obj/
 # Logs
 *.log
 
-# DLL / artefatos tempor·rios
+# DLL / artefatos tempor√°rios
 *.dll
 *.pdb
+
+.vs/Fiap.Api.InclusaoDiversidadeEmpresas.slnx/v18/.suo
+/.vs/Fiap.Api.InclusaoDiversidadeEmpresas.slnx/v18/.wsuo
+/.vs/VSWorkspaceState.json
