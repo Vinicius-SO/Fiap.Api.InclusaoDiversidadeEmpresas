@@ -1,25 +1,28 @@
-﻿using Fiap.Api.InclusaoDiversidadeEmpresas.Services;
+﻿using AutoMapper;
+using Fiap.Api.InclusaoDiversidadeEmpresas.Services;
 using Fiap.Api.InclusaoDiversidadeEmpresas.ViewModel;
 using InclusaoDiversidadeEmpresas.Models;
-using Microsoft.AspNetCore.Authorization; // 👈 Adicione este using
-using Microsoft.AspNetCore.Http;
+using InclusaoDiversidadeEmpresas.ViewModels;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
 namespace Fiap.Api.InclusaoDiversidadeEmpresas.Controllers
 {
-
     [ApiController]
     [Route("api/[controller]")]
     [Authorize]
     public class TreinamentoController : ControllerBase
     {
         private readonly ITreinamentoService _treinamentoService;
+        private readonly IMapper _mapper;
 
-        public TreinamentoController(ITreinamentoService treinamentoService)
+        public TreinamentoController(
+            ITreinamentoService treinamentoService,
+            IMapper mapper)
         {
             _treinamentoService = treinamentoService;
+            _mapper = mapper;
         }
-
 
         [HttpGet]
         public async Task<ActionResult<TreinamentoPaginacaoViewModel>> GetTreinamentos(
@@ -31,62 +34,60 @@ namespace Fiap.Api.InclusaoDiversidadeEmpresas.Controllers
 
             var treinamentos = await _treinamentoService.ListarTreinamentosPaginado(pagina, tamanho);
 
-            var resultado = new TreinamentoPaginacaoViewModel
+            var vm = _mapper.Map<IEnumerable<TreinamentoViewModel>>(treinamentos);
+
+            return Ok(new TreinamentoPaginacaoViewModel
             {
-                Treinamentos = treinamentos,
+                Treinamentos = (IEnumerable<TreinamentoModel>)vm,
                 PaginaAtual = pagina,
                 TamanhoPagina = tamanho
-            };
-
-            return Ok(resultado);
+            });
         }
 
-        // GET: api/treinamento/{id}
-        [HttpGet("{id}")]
-        public async Task<ActionResult<TreinamentoModel>> GetTreinamento(long id)
+        [HttpGet("{id}")]
+        public async Task<ActionResult<TreinamentoViewModel>> GetTreinamento(long id)
         {
             var treinamento = await _treinamentoService.ObterTreinamentoPorId(id);
 
             if (treinamento == null)
                 return NotFound();
 
-            return Ok(treinamento);
+            return Ok(_mapper.Map<TreinamentoViewModel>(treinamento));
         }
 
-        // POST: api/treinamento
         [HttpPost]
-        [Authorize(Roles = "Admin")] // 👈 2. RESTRIÇÃO: Apenas Admin pode criar
-        public async Task<ActionResult<TreinamentoModel>> PostTreinamento(TreinamentoModel treinamento)
+        [Authorize(Roles = "Admin")]
+        public async Task<ActionResult<TreinamentoViewModel>> PostTreinamento(TreinamentoViewModel vm)
         {
-            var criado = await _treinamentoService.CriarTreinamento(treinamento);
+            var model = _mapper.Map<TreinamentoModel>(vm);
 
-            return CreatedAtAction(nameof(GetTreinamento), new { id = criado.Id }, criado);
+            var criado = await _treinamentoService.CriarTreinamento(model);
+
+            var retorno = _mapper.Map<TreinamentoViewModel>(criado);
+
+            return CreatedAtAction(nameof(GetTreinamento), new { id = criado.Id }, retorno);
         }
 
-
-
-        // PUT: api/treinamento/{id}
         [HttpPut("{id}")]
-        [Authorize(Roles = "Admin")] // 👈 2. RESTRIÇÃO: Apenas Admin pode atualizar
-        public async Task<ActionResult<TreinamentoModel>> PutTreinamento(long id, TreinamentoModel treinamento)
+        [Authorize(Roles = "Admin")]
+        public async Task<IActionResult> PutTreinamento(long id, TreinamentoViewModel vm)
         {
-            if (id != treinamento.Id)
+            if (id != vm.Id)
                 return BadRequest("O ID informado não corresponde ao objeto enviado.");
 
-            var atualizado = await _treinamentoService.AtualizarTreinamento(treinamento);
+            var model = _mapper.Map<TreinamentoModel>(vm);
+
+            var atualizado = await _treinamentoService.AtualizarTreinamento(id, model);
 
             if (atualizado == null)
                 return NotFound();
 
-            return Ok(atualizado);
+            return Ok(_mapper.Map<TreinamentoViewModel>(atualizado));
         }
 
-
-
-        // DELETE: api/treinamento/{id}
         [HttpDelete("{id}")]
-        [Authorize(Roles = "Admin")] // 👈 2. RESTRIÇÃO: Apenas Admin pode deletar
-        public async Task<IActionResult> DeleteTreinamento(long id)
+        [Authorize(Roles = "Admin")]
+        public async Task<IActionResult> DeleteTreinamento(long id)
         {
             var removido = await _treinamentoService.DeletarTreinamento(id);
 
