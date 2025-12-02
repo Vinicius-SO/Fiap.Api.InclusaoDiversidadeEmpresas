@@ -1,8 +1,8 @@
 {
   "openapi": "3.0.1",
   "info": {
-    "title": "Fiap.Api.InclusaoDiversidadeEmpresas",
-    "version": "1.0"
+    "title": "InclusaoDiversidadeEmpresasAPI",
+    "version": "v1"
   },
   "paths": {
     "/api/Auth/login": {
@@ -761,6 +761,19 @@
         },
         "additionalProperties": false
       }
+    },
+    "securitySchemes": {
+      "Bearer": {
+        "type": "apiKey",
+        "description": "Cabeçalho de autorização JWT usando o esquema Bearer.\r\n\r\n Digite 'Bearer' [espaço] e depois seu token.\r\n\r\nExemplo: \"Bearer 12345abcdef\"",
+        "name": "Authorization",
+        "in": "header"
+      }
     }
-  }
+  },
+  "security": [
+    {
+      "Bearer": [ ]
+    }
+  ]
 }

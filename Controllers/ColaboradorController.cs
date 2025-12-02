@@ -2,6 +2,7 @@
 using InclusaoDiversidadeEmpresas.Models;
 using InclusaoDiversidadeEmpresas.Services;
 using Microsoft.AspNetCore.Authorization; // 👈 NECESSÁRIO para usar [Authorize]
+using InclusaoDiversidadeEmpresas.ViewModels;
 
 
 [Route("api/[controller]")]
@@ -31,11 +32,18 @@ public class ColaboradoresController : ControllerBase
     // READ (LISTAR TODOS)
     // Mapeado para GET /api/Colaboradores
     [HttpGet]
-    public async Task<ActionResult<IEnumerable<Colaborador>>> GetColaboradores()
+    public async Task<ActionResult<PagedResultViewModel<ColaboradorListaViewModel>>> GetColaboradores(
+        [FromQuery] int page = 1,
+        [FromQuery] int size = 10)
     {
-        var colaboradores = await _service.GetAllColaboradores();
+        // Validações básicas de segurança
+        if (page < 1) page = 1;
+        if (size < 1) size = 10; 
+        if (size > 50) size = 50;
 
-        return Ok(colaboradores);
+        var resultado = await _service.GetAllColaboradores(page, size);
+
+        return Ok(resultado);
     }
 
     // READ (LISTAR POR ID)

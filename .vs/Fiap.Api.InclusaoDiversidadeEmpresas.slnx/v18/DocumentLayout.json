@@ -1,14 +1,106 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\vhiso\\OneDrive\\\u00C1rea de Trabalho\\faculdade\\Fiap.Api.InclusaoDiversidadeEmpresas\\",
+  "WorkspaceRootPath": "H:\\Hobert\\c#\\InclusaoDiversidadeEmpresasAPI\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{A0B19613-3D87-D536-0518-27A18505A719}|Fiap.Api.InclusaoDiversidadeEmpresas.csproj|c:\\users\\vhiso\\onedrive\\\u00E1rea de trabalho\\faculdade\\fiap.api.inclusaodiversidadeempresas\\controllers\\participacaoemtreinamentocontroller .cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{A0B19613-3D87-D536-0518-27A18505A719}|Fiap.Api.InclusaoDiversidadeEmpresas.csproj|h:\\hobert\\c#\\inclusaodiversidadeempresasapi\\viewmodel\\participacaoviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A0B19613-3D87-D536-0518-27A18505A719}|Fiap.Api.InclusaoDiversidadeEmpresas.csproj|solutionrelative:viewmodel\\participacaoviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A0B19613-3D87-D536-0518-27A18505A719}|Fiap.Api.InclusaoDiversidadeEmpresas.csproj|h:\\hobert\\c#\\inclusaodiversidadeempresasapi\\viewmodel\\colaboradorlistaviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A0B19613-3D87-D536-0518-27A18505A719}|Fiap.Api.InclusaoDiversidadeEmpresas.csproj|solutionrelative:viewmodel\\colaboradorlistaviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A0B19613-3D87-D536-0518-27A18505A719}|Fiap.Api.InclusaoDiversidadeEmpresas.csproj|h:\\hobert\\c#\\inclusaodiversidadeempresasapi\\viewmodel\\colaboradorformviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A0B19613-3D87-D536-0518-27A18505A719}|Fiap.Api.InclusaoDiversidadeEmpresas.csproj|solutionrelative:viewmodel\\colaboradorformviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A0B19613-3D87-D536-0518-27A18505A719}|Fiap.Api.InclusaoDiversidadeEmpresas.csproj|h:\\hobert\\c#\\inclusaodiversidadeempresasapi\\viewmodel\\treinamentoviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A0B19613-3D87-D536-0518-27A18505A719}|Fiap.Api.InclusaoDiversidadeEmpresas.csproj|solutionrelative:viewmodel\\treinamentoviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A0B19613-3D87-D536-0518-27A18505A719}|Fiap.Api.InclusaoDiversidadeEmpresas.csproj|h:\\hobert\\c#\\inclusaodiversidadeempresasapi\\viewmodel\\pagedresultviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A0B19613-3D87-D536-0518-27A18505A719}|Fiap.Api.InclusaoDiversidadeEmpresas.csproj|solutionrelative:viewmodel\\pagedresultviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A0B19613-3D87-D536-0518-27A18505A719}|Fiap.Api.InclusaoDiversidadeEmpresas.csproj|h:\\hobert\\c#\\inclusaodiversidadeempresasapi\\viewmodel\\loginmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A0B19613-3D87-D536-0518-27A18505A719}|Fiap.Api.InclusaoDiversidadeEmpresas.csproj|solutionrelative:viewmodel\\loginmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A0B19613-3D87-D536-0518-27A18505A719}|Fiap.Api.InclusaoDiversidadeEmpresas.csproj|h:\\hobert\\c#\\inclusaodiversidadeempresasapi\\viewmodel\\errorviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A0B19613-3D87-D536-0518-27A18505A719}|Fiap.Api.InclusaoDiversidadeEmpresas.csproj|solutionrelative:viewmodel\\errorviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A0B19613-3D87-D536-0518-27A18505A719}|Fiap.Api.InclusaoDiversidadeEmpresas.csproj|h:\\hobert\\c#\\inclusaodiversidadeempresasapi\\viewmodel\\dashboarddiversidadeviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A0B19613-3D87-D536-0518-27A18505A719}|Fiap.Api.InclusaoDiversidadeEmpresas.csproj|solutionrelative:viewmodel\\dashboarddiversidadeviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A0B19613-3D87-D536-0518-27A18505A719}|Fiap.Api.InclusaoDiversidadeEmpresas.csproj|h:\\hobert\\c#\\inclusaodiversidadeempresasapi\\controllers\\colaboradorcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A0B19613-3D87-D536-0518-27A18505A719}|Fiap.Api.InclusaoDiversidadeEmpresas.csproj|solutionrelative:controllers\\colaboradorcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A0B19613-3D87-D536-0518-27A18505A719}|Fiap.Api.InclusaoDiversidadeEmpresas.csproj|h:\\hobert\\c#\\inclusaodiversidadeempresasapi\\services\\colaboradorservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A0B19613-3D87-D536-0518-27A18505A719}|Fiap.Api.InclusaoDiversidadeEmpresas.csproj|solutionrelative:services\\colaboradorservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A0B19613-3D87-D536-0518-27A18505A719}|Fiap.Api.InclusaoDiversidadeEmpresas.csproj|h:\\hobert\\c#\\inclusaodiversidadeempresasapi\\services\\icolaboradorservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A0B19613-3D87-D536-0518-27A18505A719}|Fiap.Api.InclusaoDiversidadeEmpresas.csproj|solutionrelative:services\\icolaboradorservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A0B19613-3D87-D536-0518-27A18505A719}|Fiap.Api.InclusaoDiversidadeEmpresas.csproj|h:\\hobert\\c#\\inclusaodiversidadeempresasapi\\controllers\\relatorioscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A0B19613-3D87-D536-0518-27A18505A719}|Fiap.Api.InclusaoDiversidadeEmpresas.csproj|solutionrelative:controllers\\relatorioscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A0B19613-3D87-D536-0518-27A18505A719}|Fiap.Api.InclusaoDiversidadeEmpresas.csproj|h:\\hobert\\c#\\inclusaodiversidadeempresasapi\\controllers\\participacaoemtreinamentocontroller .cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A0B19613-3D87-D536-0518-27A18505A719}|Fiap.Api.InclusaoDiversidadeEmpresas.csproj|solutionrelative:controllers\\participacaoemtreinamentocontroller .cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A0B19613-3D87-D536-0518-27A18505A719}|Fiap.Api.InclusaoDiversidadeEmpresas.csproj|c:\\users\\vhiso\\onedrive\\\u00E1rea de trabalho\\faculdade\\fiap.api.inclusaodiversidadeempresas\\controllers\\relatorioscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A0B19613-3D87-D536-0518-27A18505A719}|Fiap.Api.InclusaoDiversidadeEmpresas.csproj|solutionrelative:controllers\\relatorioscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A0B19613-3D87-D536-0518-27A18505A719}|Fiap.Api.InclusaoDiversidadeEmpresas.csproj|h:\\hobert\\c#\\inclusaodiversidadeempresasapi\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{A0B19613-3D87-D536-0518-27A18505A719}|Fiap.Api.InclusaoDiversidadeEmpresas.csproj|solutionrelative:appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A0B19613-3D87-D536-0518-27A18505A719}|Fiap.Api.InclusaoDiversidadeEmpresas.csproj|h:\\hobert\\c#\\inclusaodiversidadeempresasapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A0B19613-3D87-D536-0518-27A18505A719}|Fiap.Api.InclusaoDiversidadeEmpresas.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A0B19613-3D87-D536-0518-27A18505A719}|Fiap.Api.InclusaoDiversidadeEmpresas.csproj|h:\\hobert\\c#\\inclusaodiversidadeempresasapi\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{A0B19613-3D87-D536-0518-27A18505A719}|Fiap.Api.InclusaoDiversidadeEmpresas.csproj|solutionrelative:properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A0B19613-3D87-D536-0518-27A18505A719}|Fiap.Api.InclusaoDiversidadeEmpresas.csproj|h:\\hobert\\c#\\inclusaodiversidadeempresasapi\\services\\authservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A0B19613-3D87-D536-0518-27A18505A719}|Fiap.Api.InclusaoDiversidadeEmpresas.csproj|solutionrelative:services\\authservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A0B19613-3D87-D536-0518-27A18505A719}|Fiap.Api.InclusaoDiversidadeEmpresas.csproj|h:\\hobert\\c#\\inclusaodiversidadeempresasapi\\services\\iauthservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A0B19613-3D87-D536-0518-27A18505A719}|Fiap.Api.InclusaoDiversidadeEmpresas.csproj|solutionrelative:services\\iauthservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A0B19613-3D87-D536-0518-27A18505A719}|Fiap.Api.InclusaoDiversidadeEmpresas.csproj|h:\\hobert\\c#\\inclusaodiversidadeempresasapi\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A0B19613-3D87-D536-0518-27A18505A719}|Fiap.Api.InclusaoDiversidadeEmpresas.csproj|solutionrelative:controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A0B19613-3D87-D536-0518-27A18505A719}|Fiap.Api.InclusaoDiversidadeEmpresas.csproj|h:\\hobert\\c#\\inclusaodiversidadeempresasapi\\controllers\\treinamentocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A0B19613-3D87-D536-0518-27A18505A719}|Fiap.Api.InclusaoDiversidadeEmpresas.csproj|solutionrelative:controllers\\treinamentocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A0B19613-3D87-D536-0518-27A18505A719}|Fiap.Api.InclusaoDiversidadeEmpresas.csproj|h:\\hobert\\c#\\inclusaodiversidadeempresasapi\\services\\relatorioservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A0B19613-3D87-D536-0518-27A18505A719}|Fiap.Api.InclusaoDiversidadeEmpresas.csproj|solutionrelative:services\\relatorioservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A0B19613-3D87-D536-0518-27A18505A719}|Fiap.Api.InclusaoDiversidadeEmpresas.csproj|h:\\hobert\\c#\\inclusaodiversidadeempresasapi\\services\\iparticipacaoemtreinamentoservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A0B19613-3D87-D536-0518-27A18505A719}|Fiap.Api.InclusaoDiversidadeEmpresas.csproj|solutionrelative:services\\iparticipacaoemtreinamentoservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A0B19613-3D87-D536-0518-27A18505A719}|Fiap.Api.InclusaoDiversidadeEmpresas.csproj|h:\\hobert\\c#\\inclusaodiversidadeempresasapi\\services\\irelatorioservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A0B19613-3D87-D536-0518-27A18505A719}|Fiap.Api.InclusaoDiversidadeEmpresas.csproj|solutionrelative:services\\irelatorioservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A0B19613-3D87-D536-0518-27A18505A719}|Fiap.Api.InclusaoDiversidadeEmpresas.csproj|h:\\hobert\\c#\\inclusaodiversidadeempresasapi\\services\\treinamentoservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A0B19613-3D87-D536-0518-27A18505A719}|Fiap.Api.InclusaoDiversidadeEmpresas.csproj|solutionrelative:services\\treinamentoservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A0B19613-3D87-D536-0518-27A18505A719}|Fiap.Api.InclusaoDiversidadeEmpresas.csproj|h:\\hobert\\c#\\inclusaodiversidadeempresasapi\\models\\relatoriodediversidademodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A0B19613-3D87-D536-0518-27A18505A719}|Fiap.Api.InclusaoDiversidadeEmpresas.csproj|solutionrelative:models\\relatoriodediversidademodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -18,11 +110,23 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 5,
           "Children": [
             {
               "$type": "Bookmark",
+              "Name": "ST:128:0:{75188d03-9892-4ae2-abf1-207126247ce5}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{40ea2e6b-2121-4bb8-a43e-c83c04b51041}"
+            },
+            {
+              "$type": "Bookmark",
               "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
             },
             {
               "$type": "Bookmark",
@@ -30,29 +134,316 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "RelatoriosController.cs",
-              "DocumentMoniker": "C:\\Users\\vhiso\\OneDrive\\\u00C1rea de Trabalho\\faculdade\\Fiap.Api.InclusaoDiversidadeEmpresas\\Controllers\\RelatoriosController.cs",
-              "RelativeDocumentMoniker": "Controllers\\RelatoriosController.cs",
-              "ToolTip": "C:\\Users\\vhiso\\OneDrive\\\u00C1rea de Trabalho\\faculdade\\Fiap.Api.InclusaoDiversidadeEmpresas\\Controllers\\RelatoriosController.cs",
-              "RelativeToolTip": "Controllers\\RelatoriosController.cs",
-              "ViewState": "AgIAABAAAAAAAAAAAAAgwBIAAAAJAAAAAAAAAA==",
+              "DocumentIndex": 0,
+              "Title": "ParticipacaoViewModel.cs",
+              "DocumentMoniker": "H:\\Hobert\\c#\\InclusaoDiversidadeEmpresasAPI\\ViewModel\\ParticipacaoViewModel.cs",
+              "RelativeDocumentMoniker": "ViewModel\\ParticipacaoViewModel.cs",
+              "ToolTip": "H:\\Hobert\\c#\\InclusaoDiversidadeEmpresasAPI\\ViewModel\\ParticipacaoViewModel.cs*",
+              "RelativeToolTip": "ViewModel\\ParticipacaoViewModel.cs*",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAA2AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-01T17:45:16.487Z",
+              "WhenOpened": "2025-12-01T23:59:38.833Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
+              "Title": "ColaboradorListaViewModel.cs",
+              "DocumentMoniker": "H:\\Hobert\\c#\\InclusaoDiversidadeEmpresasAPI\\ViewModel\\ColaboradorListaViewModel.cs",
+              "RelativeDocumentMoniker": "ViewModel\\ColaboradorListaViewModel.cs",
+              "ToolTip": "H:\\Hobert\\c#\\InclusaoDiversidadeEmpresasAPI\\ViewModel\\ColaboradorListaViewModel.cs*",
+              "RelativeToolTip": "ViewModel\\ColaboradorListaViewModel.cs*",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAA5AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-01T23:56:02.838Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "ColaboradorFormViewModel.cs",
+              "DocumentMoniker": "H:\\Hobert\\c#\\InclusaoDiversidadeEmpresasAPI\\ViewModel\\ColaboradorFormViewModel.cs",
+              "RelativeDocumentMoniker": "ViewModel\\ColaboradorFormViewModel.cs",
+              "ToolTip": "H:\\Hobert\\c#\\InclusaoDiversidadeEmpresasAPI\\ViewModel\\ColaboradorFormViewModel.cs*",
+              "RelativeToolTip": "ViewModel\\ColaboradorFormViewModel.cs*",
+              "ViewState": "AgIAABYAAAAAAAAAAAAUwCMAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-01T19:55:28.209Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "ErrorViewModel.cs",
+              "DocumentMoniker": "H:\\Hobert\\c#\\InclusaoDiversidadeEmpresasAPI\\ViewModel\\ErrorViewModel.cs",
+              "RelativeDocumentMoniker": "ViewModel\\ErrorViewModel.cs",
+              "ToolTip": "H:\\Hobert\\c#\\InclusaoDiversidadeEmpresasAPI\\ViewModel\\ErrorViewModel.cs",
+              "RelativeToolTip": "ViewModel\\ErrorViewModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-01T20:49:39.473Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "LoginModel.cs",
+              "DocumentMoniker": "H:\\Hobert\\c#\\InclusaoDiversidadeEmpresasAPI\\ViewModel\\LoginModel.cs",
+              "RelativeDocumentMoniker": "ViewModel\\LoginModel.cs",
+              "ToolTip": "H:\\Hobert\\c#\\InclusaoDiversidadeEmpresasAPI\\ViewModel\\LoginModel.cs",
+              "RelativeToolTip": "ViewModel\\LoginModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-01T19:54:08.533Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "PagedResultViewModel.cs",
+              "DocumentMoniker": "H:\\Hobert\\c#\\InclusaoDiversidadeEmpresasAPI\\ViewModel\\PagedResultViewModel.cs",
+              "RelativeDocumentMoniker": "ViewModel\\PagedResultViewModel.cs",
+              "ToolTip": "H:\\Hobert\\c#\\InclusaoDiversidadeEmpresasAPI\\ViewModel\\PagedResultViewModel.cs",
+              "RelativeToolTip": "ViewModel\\PagedResultViewModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-01T23:13:28.46Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "TreinamentoViewModel.cs",
+              "DocumentMoniker": "H:\\Hobert\\c#\\InclusaoDiversidadeEmpresasAPI\\ViewModel\\TreinamentoViewModel.cs",
+              "RelativeDocumentMoniker": "ViewModel\\TreinamentoViewModel.cs",
+              "ToolTip": "H:\\Hobert\\c#\\InclusaoDiversidadeEmpresasAPI\\ViewModel\\TreinamentoViewModel.cs",
+              "RelativeToolTip": "ViewModel\\TreinamentoViewModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAA5AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-01T19:56:16.848Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "DashboardDiversidadeViewModel.cs",
+              "DocumentMoniker": "H:\\Hobert\\c#\\InclusaoDiversidadeEmpresasAPI\\ViewModel\\DashboardDiversidadeViewModel.cs",
+              "RelativeDocumentMoniker": "ViewModel\\DashboardDiversidadeViewModel.cs",
+              "ToolTip": "H:\\Hobert\\c#\\InclusaoDiversidadeEmpresasAPI\\ViewModel\\DashboardDiversidadeViewModel.cs",
+              "RelativeToolTip": "ViewModel\\DashboardDiversidadeViewModel.cs",
+              "ViewState": "AgIAAB0AAAAAAAAAAAAAwCkAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-01T19:55:57.938Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "ColaboradorController.cs",
+              "DocumentMoniker": "H:\\Hobert\\c#\\InclusaoDiversidadeEmpresasAPI\\Controllers\\ColaboradorController.cs",
+              "RelativeDocumentMoniker": "Controllers\\ColaboradorController.cs",
+              "ToolTip": "H:\\Hobert\\c#\\InclusaoDiversidadeEmpresasAPI\\Controllers\\ColaboradorController.cs",
+              "RelativeToolTip": "Controllers\\ColaboradorController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAPAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-01T19:59:44.287Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "IColaboradorService.cs",
+              "DocumentMoniker": "H:\\Hobert\\c#\\InclusaoDiversidadeEmpresasAPI\\Services\\IColaboradorService.cs",
+              "RelativeDocumentMoniker": "Services\\IColaboradorService.cs",
+              "ToolTip": "H:\\Hobert\\c#\\InclusaoDiversidadeEmpresasAPI\\Services\\IColaboradorService.cs",
+              "RelativeToolTip": "Services\\IColaboradorService.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAA8AAAA3AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-01T20:07:24.279Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
               "Title": "ParticipacaoEmTreinamentoController .cs",
-              "DocumentMoniker": "C:\\Users\\vhiso\\OneDrive\\\u00C1rea de Trabalho\\faculdade\\Fiap.Api.InclusaoDiversidadeEmpresas\\Controllers\\ParticipacaoEmTreinamentoController .cs",
+              "DocumentMoniker": "H:\\Hobert\\c#\\InclusaoDiversidadeEmpresasAPI\\Controllers\\ParticipacaoEmTreinamentoController .cs",
               "RelativeDocumentMoniker": "Controllers\\ParticipacaoEmTreinamentoController .cs",
-              "ToolTip": "C:\\Users\\vhiso\\OneDrive\\\u00C1rea de Trabalho\\faculdade\\Fiap.Api.InclusaoDiversidadeEmpresas\\Controllers\\ParticipacaoEmTreinamentoController .cs",
+              "ToolTip": "H:\\Hobert\\c#\\InclusaoDiversidadeEmpresasAPI\\Controllers\\ParticipacaoEmTreinamentoController .cs",
               "RelativeToolTip": "Controllers\\ParticipacaoEmTreinamentoController .cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAATAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-01T17:41:35.695Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-12-01T17:41:35.695Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "H:\\Hobert\\c#\\InclusaoDiversidadeEmpresasAPI\\appsettings.json",
+              "RelativeDocumentMoniker": "appsettings.json",
+              "ToolTip": "H:\\Hobert\\c#\\InclusaoDiversidadeEmpresasAPI\\appsettings.json",
+              "RelativeToolTip": "appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAXAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-12-01T21:07:24.7Z"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c64b9c2-e352-428e-a56d-0ace190b99a6}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "ColaboradorService.cs",
+              "DocumentMoniker": "H:\\Hobert\\c#\\InclusaoDiversidadeEmpresasAPI\\Services\\ColaboradorService.cs",
+              "RelativeDocumentMoniker": "Services\\ColaboradorService.cs",
+              "ToolTip": "H:\\Hobert\\c#\\InclusaoDiversidadeEmpresasAPI\\Services\\ColaboradorService.cs",
+              "RelativeToolTip": "Services\\ColaboradorService.cs",
+              "ViewState": "AgIAACwAAAAAAAAAAAAwwC8AAAAsAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-01T20:07:27.104Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "AuthController.cs",
+              "DocumentMoniker": "H:\\Hobert\\c#\\InclusaoDiversidadeEmpresasAPI\\Controllers\\AuthController.cs",
+              "RelativeDocumentMoniker": "Controllers\\AuthController.cs",
+              "ToolTip": "H:\\Hobert\\c#\\InclusaoDiversidadeEmpresasAPI\\Controllers\\AuthController.cs",
+              "RelativeToolTip": "Controllers\\AuthController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-01T20:05:40.676Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "RelatorioService.cs",
+              "DocumentMoniker": "H:\\Hobert\\c#\\InclusaoDiversidadeEmpresasAPI\\Services\\RelatorioService.cs",
+              "RelativeDocumentMoniker": "Services\\RelatorioService.cs",
+              "ToolTip": "H:\\Hobert\\c#\\InclusaoDiversidadeEmpresasAPI\\Services\\RelatorioService.cs",
+              "RelativeToolTip": "Services\\RelatorioService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-01T20:07:08.38Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "RelatoriosController.cs",
+              "DocumentMoniker": "H:\\Hobert\\c#\\InclusaoDiversidadeEmpresasAPI\\Controllers\\RelatoriosController.cs",
+              "RelativeDocumentMoniker": "Controllers\\RelatoriosController.cs",
+              "ToolTip": "H:\\Hobert\\c#\\InclusaoDiversidadeEmpresasAPI\\Controllers\\RelatoriosController.cs",
+              "RelativeToolTip": "Controllers\\RelatoriosController.cs",
+              "ViewState": "AgIAABMAAAAAAAAAAAAgwAEAAAAtAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-01T17:45:16.487Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "AuthService.cs",
+              "DocumentMoniker": "H:\\Hobert\\c#\\InclusaoDiversidadeEmpresasAPI\\Services\\AuthService.cs",
+              "RelativeDocumentMoniker": "Services\\AuthService.cs",
+              "ToolTip": "H:\\Hobert\\c#\\InclusaoDiversidadeEmpresasAPI\\Services\\AuthService.cs",
+              "RelativeToolTip": "Services\\AuthService.cs",
+              "ViewState": "AgIAABEAAAAAAAAAAAAQwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-01T20:50:06.457Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "launchSettings.json",
+              "DocumentMoniker": "H:\\Hobert\\c#\\InclusaoDiversidadeEmpresasAPI\\Properties\\launchSettings.json",
+              "RelativeDocumentMoniker": "Properties\\launchSettings.json",
+              "ToolTip": "H:\\Hobert\\c#\\InclusaoDiversidadeEmpresasAPI\\Properties\\launchSettings.json",
+              "RelativeToolTip": "Properties\\launchSettings.json",
+              "ViewState": "AgIAACQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-12-01T21:07:10.049Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "Program.cs",
+              "DocumentMoniker": "H:\\Hobert\\c#\\InclusaoDiversidadeEmpresasAPI\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "H:\\Hobert\\c#\\InclusaoDiversidadeEmpresasAPI\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AgIAAHUAAAAAAAAAAAAAAIUAAAAKAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-01T21:40:15.004Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "IAuthService.cs",
+              "DocumentMoniker": "H:\\Hobert\\c#\\InclusaoDiversidadeEmpresasAPI\\Services\\IAuthService.cs",
+              "RelativeDocumentMoniker": "Services\\IAuthService.cs",
+              "ToolTip": "H:\\Hobert\\c#\\InclusaoDiversidadeEmpresasAPI\\Services\\IAuthService.cs",
+              "RelativeToolTip": "Services\\IAuthService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-01T20:07:26.147Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "TreinamentoController.cs",
+              "DocumentMoniker": "H:\\Hobert\\c#\\InclusaoDiversidadeEmpresasAPI\\Controllers\\TreinamentoController.cs",
+              "RelativeDocumentMoniker": "Controllers\\TreinamentoController.cs",
+              "ToolTip": "H:\\Hobert\\c#\\InclusaoDiversidadeEmpresasAPI\\Controllers\\TreinamentoController.cs",
+              "RelativeToolTip": "Controllers\\TreinamentoController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-01T20:49:55.704Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "TreinamentoService.cs",
+              "DocumentMoniker": "H:\\Hobert\\c#\\InclusaoDiversidadeEmpresasAPI\\Services\\TreinamentoService.cs",
+              "RelativeDocumentMoniker": "Services\\TreinamentoService.cs",
+              "ToolTip": "H:\\Hobert\\c#\\InclusaoDiversidadeEmpresasAPI\\Services\\TreinamentoService.cs",
+              "RelativeToolTip": "Services\\TreinamentoService.cs",
+              "ViewState": "AgIAADgAAAAAAAAAAAAIwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-01T20:07:18.166Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "IParticipacaoEmTreinamentoService.cs",
+              "DocumentMoniker": "H:\\Hobert\\c#\\InclusaoDiversidadeEmpresasAPI\\Services\\IParticipacaoEmTreinamentoService.cs",
+              "RelativeDocumentMoniker": "Services\\IParticipacaoEmTreinamentoService.cs",
+              "ToolTip": "H:\\Hobert\\c#\\InclusaoDiversidadeEmpresasAPI\\Services\\IParticipacaoEmTreinamentoService.cs",
+              "RelativeToolTip": "Services\\IParticipacaoEmTreinamentoService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-01T20:07:23.36Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "IRelatorioService.cs",
+              "DocumentMoniker": "H:\\Hobert\\c#\\InclusaoDiversidadeEmpresasAPI\\Services\\IRelatorioService.cs",
+              "RelativeDocumentMoniker": "Services\\IRelatorioService.cs",
+              "ToolTip": "H:\\Hobert\\c#\\InclusaoDiversidadeEmpresasAPI\\Services\\IRelatorioService.cs",
+              "RelativeToolTip": "Services\\IRelatorioService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-01T19:52:49.817Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "RelatorioDeDiversidadeModel.cs",
+              "DocumentMoniker": "H:\\Hobert\\c#\\InclusaoDiversidadeEmpresasAPI\\Models\\RelatorioDeDiversidadeModel.cs",
+              "RelativeDocumentMoniker": "Models\\RelatorioDeDiversidadeModel.cs",
+              "ToolTip": "H:\\Hobert\\c#\\InclusaoDiversidadeEmpresasAPI\\Models\\RelatorioDeDiversidadeModel.cs",
+              "RelativeToolTip": "Models\\RelatorioDeDiversidadeModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-01T19:50:01.553Z"
             }
           ]
         }

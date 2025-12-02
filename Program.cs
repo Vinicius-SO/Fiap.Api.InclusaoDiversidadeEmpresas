@@ -10,7 +10,7 @@ using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.IdentityModel.Tokens;
 using System.Text;
 using System;
-
+using Microsoft.OpenApi.Models; // <--- ADICIONEI ESTE USING (Necessário para o Swagger funcionar)
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -24,7 +24,41 @@ builder.Services.AddControllers()
   });
 
 builder.Services.AddEndpointsApiExplorer();
-builder.Services.AddSwaggerGen();
+
+// 👇👇👇 AQUI ESTÁ A MUDANÇA PRINCIPAL 👇👇👇
+// Substituímos o AddSwaggerGen simples por esta configuração completa:
+builder.Services.AddSwaggerGen(c =>
+{
+    c.SwaggerDoc("v1", new OpenApiInfo { Title = "InclusaoDiversidadeEmpresasAPI", Version = "v1" });
+
+    // 1. Define o esquema de segurança (o botão "Authorize")
+    c.AddSecurityDefinition("Bearer", new OpenApiSecurityScheme
+    {
+        Name = "Authorization",
+        Type = SecuritySchemeType.ApiKey,
+        Scheme = "Bearer",
+        BearerFormat = "JWT",
+        In = ParameterLocation.Header,
+        Description = "Cabeçalho de autorização JWT usando o esquema Bearer.\r\n\r\n Digite 'Bearer' [espaço] e depois seu token.\r\n\r\nExemplo: \"Bearer 12345abcdef\"",
+    });
+
+    // 2. Aplica a segurança globalmente em todos os endpoints
+    c.AddSecurityRequirement(new OpenApiSecurityRequirement
+    {
+        {
+            new OpenApiSecurityScheme
+            {
+                Reference = new OpenApiReference
+                {
+                    Type = ReferenceType.SecurityScheme,
+                    Id = "Bearer"
+                }
+            },
+            new string[] {}
+        }
+    });
+});
+// 👆👆👆 FIM DA MUDANÇA 👆👆👆
 
 #region Services
 builder.Services.AddScoped<IColaboradorService, ColaboradorService>();
@@ -50,8 +84,6 @@ var mapperConfig = new MapperConfiguration(c =>
 {
     c.AllowNullCollections = true;
     c.AllowNullDestinationValues = true;
-
-
 });
 
 IMapper mapper = mapperConfig.CreateMapper();
@@ -84,7 +116,6 @@ builder.Services.AddAuthentication(x =>
     };
 });
 
-
 var app = builder.Build();
 
 if (app.Environment.IsDevelopment())
@@ -95,9 +126,8 @@ if (app.Environment.IsDevelopment())
 
 app.UseHttpsRedirection();
 
-
 app.UseAuthentication();
-app.UseAuthorization(); 
+app.UseAuthorization();
 
 app.MapControllers();
 

@@ -1,7 +1,8 @@
 ﻿using InclusaoDiversidadeEmpresas.Services;
+using InclusaoDiversidadeEmpresas.ViewModels;
+using Microsoft.AspNetCore.Authorization; 
 using Microsoft.AspNetCore.Mvc;
 using System.Threading.Tasks;
-using Microsoft.AspNetCore.Authorization; 
 
 namespace InclusaoDiversidadeEmpresas.Controllers
 {
@@ -31,7 +32,7 @@ namespace InclusaoDiversidadeEmpresas.Controllers
             }
 
             // Retorna o objeto RelatorioDeDiversidadeModel no formato JSON
-            return Ok(relatorio);
+            return Ok(new DashboardDiversidadeViewModel(relatorio));
         }
     }
 }

@@ -3408,23 +3408,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\vhiso\\.nuget\\packages\\": {},
+    "C:\\Users\\Hobert\\.nuget\\packages\\": {},
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\vhiso\\OneDrive\\Área de Trabalho\\faculdade\\Fiap.Api.InclusaoDiversidadeEmpresas\\Fiap.Api.InclusaoDiversidadeEmpresas.csproj",
+      "projectUniqueName": "H:\\Hobert\\c#\\InclusaoDiversidadeEmpresasAPI\\Fiap.Api.InclusaoDiversidadeEmpresas.csproj",
       "projectName": "Fiap.Api.InclusaoDiversidadeEmpresas",
-      "projectPath": "C:\\Users\\vhiso\\OneDrive\\Área de Trabalho\\faculdade\\Fiap.Api.InclusaoDiversidadeEmpresas\\Fiap.Api.InclusaoDiversidadeEmpresas.csproj",
-      "packagesPath": "C:\\Users\\vhiso\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\vhiso\\OneDrive\\Área de Trabalho\\faculdade\\Fiap.Api.InclusaoDiversidadeEmpresas\\obj\\",
+      "projectPath": "H:\\Hobert\\c#\\InclusaoDiversidadeEmpresasAPI\\Fiap.Api.InclusaoDiversidadeEmpresas.csproj",
+      "packagesPath": "C:\\Users\\Hobert\\.nuget\\packages\\",
+      "outputPath": "H:\\Hobert\\c#\\InclusaoDiversidadeEmpresasAPI\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
-        "C:\\Users\\vhiso\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Hobert\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
@@ -3509,24 +3509,6 @@
         ],
         "assetTargetFallback": true,
         "warn": true,
-        "downloadDependencies": [
-          {
-            "name": "Microsoft.AspNetCore.App.Ref",
-            "version": "[8.0.22, 8.0.22]"
-          },
-          {
-            "name": "Microsoft.NETCore.App.Host.win-x64",
-            "version": "[8.0.22, 8.0.22]"
-          },
-          {
-            "name": "Microsoft.NETCore.App.Ref",
-            "version": "[8.0.22, 8.0.22]"
-          },
-          {
-            "name": "Microsoft.WindowsDesktop.App.Ref",
-            "version": "[8.0.22, 8.0.22]"
-          }
-        ],
         "frameworkReferences": {
           "Microsoft.AspNetCore.App": {
             "privateAssets": "none"
