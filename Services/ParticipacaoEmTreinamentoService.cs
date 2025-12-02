@@ -13,23 +13,20 @@ namespace Fiap.Api.InclusaoDiversidadeEmpresas.Services
             _databaseContext = databaseContext;
         }
 
-        public async Task<ParticipacaoEmTreinamentoModel?> AtualizarParticipacaoEmTreinamentoService(ParticipacaoEmTreinamentoModel participacaoEmTreinamento)
+        public async Task<ParticipacaoEmTreinamentoModel?> AtualizarParticipacaoEmTreinamentoService(long id, ParticipacaoEmTreinamentoModel model)
         {
-            _databaseContext.ParticipacoesEmTreinamento.Update(participacaoEmTreinamento);
+            var existente = await _databaseContext.ParticipacoesEmTreinamento.FindAsync(id);
 
-            try
-            {
-                await _databaseContext.SaveChangesAsync();
-                return participacaoEmTreinamento;
-            }
-            catch (DbUpdateConcurrencyException)
-            {
-                if (!await _databaseContext.ParticipacoesEmTreinamento.AnyAsync(e => e.Id == participacaoEmTreinamento.Id))
-                {
-                    return null;
-                }
-                throw;
-            }
+            if (existente == null)
+                return null;
+
+            existente.ColaboradorId = model.ColaboradorId;
+            existente.TreinamentoId = model.TreinamentoId;
+            existente.Completo = model.Completo;
+            existente.DataDeConclusao = model.DataDeConclusao;
+
+            await _databaseContext.SaveChangesAsync();
+            return existente;
         }
 
         public async Task<ParticipacaoEmTreinamentoModel> CriarParticipacaoEmTreinamentoService(ParticipacaoEmTreinamentoModel participacaoEmTreinamento)

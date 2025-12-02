@@ -25,6 +25,10 @@ namespace InclusaoDiversidadeEmpresas.Services
             await _context.SaveChangesAsync();
             return colaborador;
         }
+        public async Task<IEnumerable<Colaborador>> GetAllColaboradoresSemPaginacao()
+        {
+            return await _context.Colaboradores.ToListAsync();
+        }
 
         // READ (Listar Todos)
         public async Task<PagedResultViewModel<ColaboradorListaViewModel>> GetAllColaboradores(int page, int pageSize)

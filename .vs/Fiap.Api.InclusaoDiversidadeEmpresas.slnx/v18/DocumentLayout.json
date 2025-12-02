@@ -3,36 +3,12 @@
   "WorkspaceRootPath": "C:\\Users\\vhiso\\source\\repos\\Fiap.Api.InclusaoDiversidadeEmpresas\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{A0B19613-3D87-D536-0518-27A18505A719}|Fiap.Api.InclusaoDiversidadeEmpresas.csproj|c:\\users\\vhiso\\source\\repos\\fiap.api.inclusaodiversidadeempresas\\services\\treinamentoservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A0B19613-3D87-D536-0518-27A18505A719}|Fiap.Api.InclusaoDiversidadeEmpresas.csproj|solutionrelative:services\\treinamentoservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A0B19613-3D87-D536-0518-27A18505A719}|Fiap.Api.InclusaoDiversidadeEmpresas.csproj|c:\\users\\vhiso\\source\\repos\\fiap.api.inclusaodiversidadeempresas\\services\\itreinamentoservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A0B19613-3D87-D536-0518-27A18505A719}|Fiap.Api.InclusaoDiversidadeEmpresas.csproj|solutionrelative:services\\itreinamentoservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A0B19613-3D87-D536-0518-27A18505A719}|Fiap.Api.InclusaoDiversidadeEmpresas.csproj|c:\\users\\vhiso\\source\\repos\\fiap.api.inclusaodiversidadeempresas\\controllers\\treinamentocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A0B19613-3D87-D536-0518-27A18505A719}|Fiap.Api.InclusaoDiversidadeEmpresas.csproj|solutionrelative:controllers\\treinamentocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A0B19613-3D87-D536-0518-27A18505A719}|Fiap.Api.InclusaoDiversidadeEmpresas.csproj|c:\\users\\vhiso\\source\\repos\\fiap.api.inclusaodiversidadeempresas\\viewmodel\\treinamentoviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A0B19613-3D87-D536-0518-27A18505A719}|Fiap.Api.InclusaoDiversidadeEmpresas.csproj|solutionrelative:viewmodel\\treinamentoviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A0B19613-3D87-D536-0518-27A18505A719}|Fiap.Api.InclusaoDiversidadeEmpresas.csproj|c:\\users\\vhiso\\source\\repos\\fiap.api.inclusaodiversidadeempresas\\viewmodel\\participacaoviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A0B19613-3D87-D536-0518-27A18505A719}|Fiap.Api.InclusaoDiversidadeEmpresas.csproj|solutionrelative:viewmodel\\participacaoviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A0B19613-3D87-D536-0518-27A18505A719}|Fiap.Api.InclusaoDiversidadeEmpresas.csproj|c:\\users\\vhiso\\source\\repos\\fiap.api.inclusaodiversidadeempresas\\viewmodel\\participacaopaginacaoviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A0B19613-3D87-D536-0518-27A18505A719}|Fiap.Api.InclusaoDiversidadeEmpresas.csproj|solutionrelative:viewmodel\\participacaopaginacaoviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A0B19613-3D87-D536-0518-27A18505A719}|Fiap.Api.InclusaoDiversidadeEmpresas.csproj|c:\\users\\vhiso\\source\\repos\\fiap.api.inclusaodiversidadeempresas\\services\\participacaoemtreinamentoservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A0B19613-3D87-D536-0518-27A18505A719}|Fiap.Api.InclusaoDiversidadeEmpresas.csproj|solutionrelative:services\\participacaoemtreinamentoservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A0B19613-3D87-D536-0518-27A18505A719}|Fiap.Api.InclusaoDiversidadeEmpresas.csproj|c:\\users\\vhiso\\source\\repos\\fiap.api.inclusaodiversidadeempresas\\controllers\\participacaoemtreinamentocontroller .cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A0B19613-3D87-D536-0518-27A18505A719}|Fiap.Api.InclusaoDiversidadeEmpresas.csproj|solutionrelative:controllers\\participacaoemtreinamentocontroller .cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A0B19613-3D87-D536-0518-27A18505A719}|Fiap.Api.InclusaoDiversidadeEmpresas.csproj|c:\\users\\vhiso\\source\\repos\\fiap.api.inclusaodiversidadeempresas\\services\\participacaoemtreinamentoservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A0B19613-3D87-D536-0518-27A18505A719}|Fiap.Api.InclusaoDiversidadeEmpresas.csproj|solutionrelative:services\\participacaoemtreinamentoservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A0B19613-3D87-D536-0518-27A18505A719}|Fiap.Api.InclusaoDiversidadeEmpresas.csproj|c:\\users\\vhiso\\source\\repos\\fiap.api.inclusaodiversidadeempresas\\services\\iparticipacaoemtreinamentoservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -46,8 +22,34 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 1,
           "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "ParticipacaoEmTreinamentoController .cs",
+              "DocumentMoniker": "C:\\Users\\vhiso\\source\\repos\\Fiap.Api.InclusaoDiversidadeEmpresas\\Controllers\\ParticipacaoEmTreinamentoController .cs",
+              "RelativeDocumentMoniker": "Controllers\\ParticipacaoEmTreinamentoController .cs",
+              "ToolTip": "C:\\Users\\vhiso\\source\\repos\\Fiap.Api.InclusaoDiversidadeEmpresas\\Controllers\\ParticipacaoEmTreinamentoController .cs",
+              "RelativeToolTip": "Controllers\\ParticipacaoEmTreinamentoController .cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-02T17:24:49.358Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "ParticipacaoEmTreinamentoService.cs",
+              "DocumentMoniker": "C:\\Users\\vhiso\\source\\repos\\Fiap.Api.InclusaoDiversidadeEmpresas\\Services\\ParticipacaoEmTreinamentoService.cs",
+              "RelativeDocumentMoniker": "Services\\ParticipacaoEmTreinamentoService.cs",
+              "ToolTip": "C:\\Users\\vhiso\\source\\repos\\Fiap.Api.InclusaoDiversidadeEmpresas\\Services\\ParticipacaoEmTreinamentoService.cs*",
+              "RelativeToolTip": "Services\\ParticipacaoEmTreinamentoService.cs*",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-02T17:22:58.665Z",
+              "EditorCaption": ""
+            },
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
@@ -58,118 +60,16 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "TreinamentoService.cs",
-              "DocumentMoniker": "C:\\Users\\vhiso\\source\\repos\\Fiap.Api.InclusaoDiversidadeEmpresas\\Services\\TreinamentoService.cs",
-              "RelativeDocumentMoniker": "Services\\TreinamentoService.cs",
-              "ToolTip": "C:\\Users\\vhiso\\source\\repos\\Fiap.Api.InclusaoDiversidadeEmpresas\\Services\\TreinamentoService.cs",
-              "RelativeToolTip": "Services\\TreinamentoService.cs",
-              "ViewState": "AgIAAG0AAAAAAAAAAADwvy8AAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-02T14:26:13.163Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "ITreinamentoService.cs",
-              "DocumentMoniker": "C:\\Users\\vhiso\\source\\repos\\Fiap.Api.InclusaoDiversidadeEmpresas\\Services\\ITreinamentoService.cs",
-              "RelativeDocumentMoniker": "Services\\ITreinamentoService.cs",
-              "ToolTip": "C:\\Users\\vhiso\\source\\repos\\Fiap.Api.InclusaoDiversidadeEmpresas\\Services\\ITreinamentoService.cs",
-              "RelativeToolTip": "Services\\ITreinamentoService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAvAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-02T14:25:30.673Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "TreinamentoController.cs",
-              "DocumentMoniker": "C:\\Users\\vhiso\\source\\repos\\Fiap.Api.InclusaoDiversidadeEmpresas\\Controllers\\TreinamentoController.cs",
-              "RelativeDocumentMoniker": "Controllers\\TreinamentoController.cs",
-              "ToolTip": "C:\\Users\\vhiso\\source\\repos\\Fiap.Api.InclusaoDiversidadeEmpresas\\Controllers\\TreinamentoController.cs",
-              "RelativeToolTip": "Controllers\\TreinamentoController.cs",
-              "ViewState": "AgIAAHwAAAAAAAAAAAAwwA0AAAATAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-02T14:20:49.341Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "TreinamentoViewModel.cs",
-              "DocumentMoniker": "C:\\Users\\vhiso\\source\\repos\\Fiap.Api.InclusaoDiversidadeEmpresas\\ViewModel\\TreinamentoViewModel.cs",
-              "RelativeDocumentMoniker": "ViewModel\\TreinamentoViewModel.cs",
-              "ToolTip": "C:\\Users\\vhiso\\source\\repos\\Fiap.Api.InclusaoDiversidadeEmpresas\\ViewModel\\TreinamentoViewModel.cs",
-              "RelativeToolTip": "ViewModel\\TreinamentoViewModel.cs",
-              "ViewState": "AgIAABMAAAAAAAAAAAAkwBwAAAA1AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-02T14:19:34.917Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "ParticipacaoViewModel.cs",
-              "DocumentMoniker": "C:\\Users\\vhiso\\source\\repos\\Fiap.Api.InclusaoDiversidadeEmpresas\\ViewModel\\ParticipacaoViewModel.cs",
-              "RelativeDocumentMoniker": "ViewModel\\ParticipacaoViewModel.cs",
-              "ToolTip": "C:\\Users\\vhiso\\source\\repos\\Fiap.Api.InclusaoDiversidadeEmpresas\\ViewModel\\ParticipacaoViewModel.cs",
-              "RelativeToolTip": "ViewModel\\ParticipacaoViewModel.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-02T14:19:26.308Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "ParticipacaoEmTreinamentoController .cs",
-              "DocumentMoniker": "C:\\Users\\vhiso\\source\\repos\\Fiap.Api.InclusaoDiversidadeEmpresas\\Controllers\\ParticipacaoEmTreinamentoController .cs",
-              "RelativeDocumentMoniker": "Controllers\\ParticipacaoEmTreinamentoController .cs",
-              "ToolTip": "C:\\Users\\vhiso\\source\\repos\\Fiap.Api.InclusaoDiversidadeEmpresas\\Controllers\\ParticipacaoEmTreinamentoController .cs",
-              "RelativeToolTip": "Controllers\\ParticipacaoEmTreinamentoController .cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAATAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-02T01:25:43.395Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
               "Title": "IParticipacaoEmTreinamentoService.cs",
               "DocumentMoniker": "C:\\Users\\vhiso\\source\\repos\\Fiap.Api.InclusaoDiversidadeEmpresas\\Services\\IParticipacaoEmTreinamentoService.cs",
               "RelativeDocumentMoniker": "Services\\IParticipacaoEmTreinamentoService.cs",
               "ToolTip": "C:\\Users\\vhiso\\source\\repos\\Fiap.Api.InclusaoDiversidadeEmpresas\\Services\\IParticipacaoEmTreinamentoService.cs",
               "RelativeToolTip": "Services\\IParticipacaoEmTreinamentoService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAuwAkAAABXAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-02T01:24:23.035Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "ParticipacaoPaginacaoViewModel.cs",
-              "DocumentMoniker": "C:\\Users\\vhiso\\source\\repos\\Fiap.Api.InclusaoDiversidadeEmpresas\\ViewModel\\ParticipacaoPaginacaoViewModel.cs",
-              "RelativeDocumentMoniker": "ViewModel\\ParticipacaoPaginacaoViewModel.cs",
-              "ToolTip": "C:\\Users\\vhiso\\source\\repos\\Fiap.Api.InclusaoDiversidadeEmpresas\\ViewModel\\ParticipacaoPaginacaoViewModel.cs",
-              "RelativeToolTip": "ViewModel\\ParticipacaoPaginacaoViewModel.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAABQAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-02T01:24:02.096Z",
+              "WhenOpened": "2025-12-02T17:21:55.754Z",
               "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "ParticipacaoEmTreinamentoService.cs",
-              "DocumentMoniker": "C:\\Users\\vhiso\\source\\repos\\Fiap.Api.InclusaoDiversidadeEmpresas\\Services\\ParticipacaoEmTreinamentoService.cs",
-              "RelativeDocumentMoniker": "Services\\ParticipacaoEmTreinamentoService.cs",
-              "ToolTip": "C:\\Users\\vhiso\\source\\repos\\Fiap.Api.InclusaoDiversidadeEmpresas\\Services\\ParticipacaoEmTreinamentoService.cs",
-              "RelativeToolTip": "Services\\ParticipacaoEmTreinamentoService.cs",
-              "ViewState": "AgIAADcAAAAAAAAAAAAiwEoAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-02T01:23:15.571Z"
             }
           ]
         }

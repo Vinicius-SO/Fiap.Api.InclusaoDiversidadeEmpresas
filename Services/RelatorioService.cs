@@ -24,7 +24,7 @@ namespace Fiap.Api.InclusaoDiversidadeEmpresas.Services
         public async Task<RelatorioDeDiversidadeModel> GerarRelatorioAsync()
         {
             // 1. Obtém a lista completa de colaboradores (necessário para todas as contagens)
-            var colaboradores = await _colaboradorService.GetAllColaboradores(1, int.MaxValue);
+            var colaboradores = await _colaboradorService.GetAllColaboradoresSemPaginacao();
             var listaColaboradores = colaboradores.ToList();
 
             // 2. Contagens
