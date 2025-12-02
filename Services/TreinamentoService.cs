@@ -1,6 +1,13 @@
-﻿using InclusaoDiversidadeEmpresas.Data;
+﻿// 📁 Services/TreinamentoService.cs
+
+using Fiap.Api.InclusaoDiversidadeEmpresas.Models;
+using Fiap.Api.InclusaoDiversidadeEmpresas.ViewModels; // Necessário para PagedResultViewModel
+using InclusaoDiversidadeEmpresas.Data;
 using InclusaoDiversidadeEmpresas.Models;
+using InclusaoDiversidadeEmpresas.ViewModels;
 using Microsoft.EntityFrameworkCore;
+using System.Linq;
+using System.Threading.Tasks;
 
 namespace Fiap.Api.InclusaoDiversidadeEmpresas.Services
 {
@@ -13,7 +20,50 @@ namespace Fiap.Api.InclusaoDiversidadeEmpresas.Services
             _databaseContext = databaseContext;
         }
 
-        public async Task<TreinamentoModel?> AtualizarTreinamento(long id, TreinamentoModel model)
+        // CREATE
+        public async Task<TreinamentoModel> AddTreinamento(TreinamentoModel treinamento)
+        {
+            _databaseContext.Treinamentos.Add(treinamento);
+            await _databaseContext.SaveChangesAsync();
+            return treinamento;
+        }
+
+        // READ (LISTAR TODOS) - IMPLEMENTAÇÃO CORRIGIDA PARA PAGINAÇÃO
+        public async Task<PagedResultViewModel<TreinamentoModel>> GetAllTreinamentos(QueryParameters parameters)
+        {
+            // 1. Conta o total de itens
+            var totalItems = await _databaseContext.Treinamentos.CountAsync();
+
+            // 2. Define PageNumber e PageSize (Defensivo)
+            int page = parameters.PageNumber < 1 ? 1 : parameters.PageNumber;
+            int pageSize = parameters.PageSize;
+
+            // 3. Aplica Paginação (Skip e Take)
+            var items = await _databaseContext.Treinamentos
+                .OrderBy(t => t.Id)
+                .Skip((page - 1) * pageSize)
+                .Take(pageSize)
+                .ToListAsync();
+
+            // 4. Monta o pacote de resposta
+            return new PagedResultViewModel<TreinamentoModel>
+            {
+                Items = items,
+                TotalItems = totalItems,
+                Page = page,
+                PageSize = pageSize
+            };
+        }
+
+        // READ (Por ID) - Antigo ObterTreinamentoPorId
+        public async Task<TreinamentoModel?> GetTreinamentoById(long id)
+        {
+            return await _databaseContext.Treinamentos
+                .FirstOrDefaultAsync(t => t.Id == id);
+        }
+
+        // UPDATE - Antigo AtualizarTreinamento
+        public async Task<TreinamentoModel?> UpdateTreinamento(long id, TreinamentoModel model)
         {
             var existente = await _databaseContext.Treinamentos.FindAsync(id);
 
@@ -30,14 +80,8 @@ namespace Fiap.Api.InclusaoDiversidadeEmpresas.Services
             return existente;
         }
 
-        public async Task<TreinamentoModel> CriarTreinamento(TreinamentoModel treinamento)
-        {
-            _databaseContext.Treinamentos.Add(treinamento);
-            await _databaseContext.SaveChangesAsync();
-            return treinamento;
-        }
-
-        public async Task<bool> DeletarTreinamento(long id)
+        // DELETE - Antigo DeletarTreinamento
+        public async Task<bool> DeleteTreinamento(long id)
         {
             var treinamento = await _databaseContext.Treinamentos.FindAsync(id);
 
@@ -53,21 +97,5 @@ namespace Fiap.Api.InclusaoDiversidadeEmpresas.Services
             await _databaseContext.SaveChangesAsync();
             return true;
         }
-
-        public async Task<IEnumerable<TreinamentoModel>> ListarTreinamentosPaginado(int pagina, int tamanho)
-        {
-            return await _databaseContext.Treinamentos
-                .OrderBy(t => t.Id)
-                .Skip((pagina - 1) * tamanho)
-                .Take(tamanho)
-                .ToListAsync();
-        }
-
-        public async Task<TreinamentoModel?> ObterTreinamentoPorId(long id)
-        {
-            return await _databaseContext.Treinamentos
-                .FirstOrDefaultAsync(t => t.Id == id);
-        }
     }
-
 }

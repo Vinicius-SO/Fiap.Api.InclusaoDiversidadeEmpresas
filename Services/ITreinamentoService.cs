@@ -1,10 +1,18 @@
-﻿using InclusaoDiversidadeEmpresas.Models;
+﻿
+
+using Fiap.Api.InclusaoDiversidadeEmpresas.Models;
+using Fiap.Api.InclusaoDiversidadeEmpresas.ViewModels;
+using InclusaoDiversidadeEmpresas.Models;
+using InclusaoDiversidadeEmpresas.ViewModels;
+using System.Threading.Tasks;
+
 
 public interface ITreinamentoService
 {
-    Task<IEnumerable<TreinamentoModel>> ListarTreinamentosPaginado(int pagina, int tamanho);
-    Task<TreinamentoModel?> ObterTreinamentoPorId(long id);
-    Task<TreinamentoModel> CriarTreinamento(TreinamentoModel treinamento);
-    Task<TreinamentoModel?> AtualizarTreinamento(long id, TreinamentoModel treinamento);
-    Task<bool> DeletarTreinamento(long id);
+    // READ (LISTAR TODOS) 
+    Task<PagedResultViewModel<TreinamentoModel>> GetAllTreinamentos(QueryParameters parameters);
+    Task<TreinamentoModel?> GetTreinamentoById(long id);
+    Task<TreinamentoModel> AddTreinamento(TreinamentoModel treinamento);
+    Task<TreinamentoModel?> UpdateTreinamento(long id, TreinamentoModel treinamento);
+    Task<bool> DeleteTreinamento(long id);
 }

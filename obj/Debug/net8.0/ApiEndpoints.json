@@ -48,10 +48,21 @@
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
-    "Parameters": [],
+    "Parameters": [
+      {
+        "Name": "PageNumber",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "PageSize",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
     "ReturnTypes": [
       {
-        "Type": "System.Collections.Generic.IEnumerable\u00601[[InclusaoDiversidadeEmpresas.Models.Colaborador, Fiap.Api.InclusaoDiversidadeEmpresas, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "Type": "InclusaoDiversidadeEmpresas.ViewModels.PagedResultViewModel\u00601[[Fiap.Api.InclusaoDiversidadeEmpresas.ViewModels.ColaboradorListaViewModel, Fiap.Api.InclusaoDiversidadeEmpresas, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
         "MediaTypes": [
           "text/plain",
           "application/json",
@@ -273,19 +284,19 @@
     "Order": 0,
     "Parameters": [
       {
-        "Name": "pagina",
+        "Name": "PageNumber",
         "Type": "System.Int32",
         "IsRequired": false
       },
       {
-        "Name": "tamanho",
+        "Name": "PageSize",
         "Type": "System.Int32",
         "IsRequired": false
       }
     ],
     "ReturnTypes": [
       {
-        "Type": "Fiap.Api.InclusaoDiversidadeEmpresas.ViewModel.TreinamentoPaginacaoViewModel",
+        "Type": "InclusaoDiversidadeEmpresas.ViewModels.PagedResultViewModel\u00601[[InclusaoDiversidadeEmpresas.Models.TreinamentoModel, Fiap.Api.InclusaoDiversidadeEmpresas, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
         "MediaTypes": [
           "text/plain",
           "application/json",
@@ -304,14 +315,14 @@
     "Order": 0,
     "Parameters": [
       {
-        "Name": "treinamento",
-        "Type": "InclusaoDiversidadeEmpresas.Models.TreinamentoModel",
+        "Name": "vm",
+        "Type": "InclusaoDiversidadeEmpresas.ViewModels.TreinamentoViewModel",
         "IsRequired": true
       }
     ],
     "ReturnTypes": [
       {
-        "Type": "InclusaoDiversidadeEmpresas.Models.TreinamentoModel",
+        "Type": "InclusaoDiversidadeEmpresas.ViewModels.TreinamentoViewModel",
         "MediaTypes": [
           "text/plain",
           "application/json",
@@ -337,7 +348,7 @@
     ],
     "ReturnTypes": [
       {
-        "Type": "InclusaoDiversidadeEmpresas.Models.TreinamentoModel",
+        "Type": "InclusaoDiversidadeEmpresas.ViewModels.TreinamentoViewModel",
         "MediaTypes": [
           "text/plain",
           "application/json",
@@ -361,22 +372,12 @@
         "IsRequired": true
       },
       {
-        "Name": "treinamento",
-        "Type": "InclusaoDiversidadeEmpresas.Models.TreinamentoModel",
+        "Name": "vm",
+        "Type": "InclusaoDiversidadeEmpresas.ViewModels.TreinamentoViewModel",
         "IsRequired": true
       }
     ],
-    "ReturnTypes": [
-      {
-        "Type": "InclusaoDiversidadeEmpresas.Models.TreinamentoModel",
-        "MediaTypes": [
-          "text/plain",
-          "application/json",
-          "text/json"
-        ],
-        "StatusCode": 200
-      }
-    ]
+    "ReturnTypes": []
   },
   {
     "ContainingType": "Fiap.Api.InclusaoDiversidadeEmpresas.Controllers.TreinamentoController",

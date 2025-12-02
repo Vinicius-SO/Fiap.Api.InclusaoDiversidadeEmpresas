@@ -1,12 +1,16 @@
-﻿using InclusaoDiversidadeEmpresas.Data;
+﻿
+
+using InclusaoDiversidadeEmpresas.Data;
+using Fiap.Api.InclusaoDiversidadeEmpresas.Models;
+using Fiap.Api.InclusaoDiversidadeEmpresas.ViewModels;
 using InclusaoDiversidadeEmpresas.Models;
+using InclusaoDiversidadeEmpresas.ViewModels;
 using Microsoft.EntityFrameworkCore;
 using System.Collections.Generic;
-using System.Threading.Tasks;
-using InclusaoDiversidadeEmpresas.ViewModels;
 using System.Linq;
+using System.Threading.Tasks;
 
-namespace InclusaoDiversidadeEmpresas.Services
+namespace Fiap.Api.InclusaoDiversidadeEmpresas.Services
 {
     public class ColaboradorService : IColaboradorService
     {
@@ -27,12 +31,15 @@ namespace InclusaoDiversidadeEmpresas.Services
         }
 
         // READ (Listar Todos)
-        public async Task<PagedResultViewModel<ColaboradorListaViewModel>> GetAllColaboradores(int page, int pageSize)
+        public async Task<PagedResultViewModel<ColaboradorListaViewModel>> GetAllColaboradores(QueryParameters parameters)
         {
-            // 1. Descobre quantos itens existem no total (para calcular as páginas)
             var totalItems = await _context.Colaboradores.CountAsync();
 
-            // 2. Busca apenas a página solicitada
+           
+            int page = parameters.PageNumber < 1 ? 1 : parameters.PageNumber;
+            int pageSize = parameters.PageSize;
+
+         
             var items = await _context.Colaboradores
                 .Skip((page - 1) * pageSize)
                 .Take(pageSize)
@@ -41,11 +48,15 @@ namespace InclusaoDiversidadeEmpresas.Services
                     Id = c.Id,
                     Nome = c.NomeColaborador,
                     Departamento = c.Departamento,
-                    Email = c.Email
+                    Email = c.Email,
+                   
+                    GeneroColaborador = c.GeneroColaborador,
+                    EtniaColaborador = c.EtniaColaborador,
+                    TemDisabilidade = c.TemDisabilidade
                 })
                 .ToListAsync();
 
-            // 3. Monta o pacote de resposta
+           
             return new PagedResultViewModel<ColaboradorListaViewModel>
             {
                 Items = items,
@@ -61,7 +72,7 @@ namespace InclusaoDiversidadeEmpresas.Services
             return await _context.Colaboradores.FindAsync(id);
         }
 
-        // UPDATE (Lógica simplificada)
+        // UPDATE 
         public async Task<Colaborador?> UpdateColaborador(Colaborador colaborador)
         {
             _context.Entry(colaborador).State = EntityState.Modified;
@@ -72,7 +83,7 @@ namespace InclusaoDiversidadeEmpresas.Services
             }
             catch (DbUpdateConcurrencyException)
             {
-                // Se a entidade não existir (concorrência), retorna null
+              
                 if (!await _context.Colaboradores.AnyAsync(e => e.Id == colaborador.Id))
                 {
                     return null;

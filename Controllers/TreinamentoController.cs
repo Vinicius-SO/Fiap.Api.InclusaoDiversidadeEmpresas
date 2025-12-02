@@ -1,10 +1,17 @@
-﻿using AutoMapper;
+﻿
+
+using AutoMapper;
+using Fiap.Api.InclusaoDiversidadeEmpresas.Models; 
 using Fiap.Api.InclusaoDiversidadeEmpresas.Services;
-using Fiap.Api.InclusaoDiversidadeEmpresas.ViewModel;
+using Fiap.Api.InclusaoDiversidadeEmpresas.ViewModels; 
 using InclusaoDiversidadeEmpresas.Models;
 using InclusaoDiversidadeEmpresas.ViewModels;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
+using System.Collections.Generic;
+using System.Threading.Tasks;
+
+
 
 namespace Fiap.Api.InclusaoDiversidadeEmpresas.Controllers
 {
@@ -24,30 +31,22 @@ namespace Fiap.Api.InclusaoDiversidadeEmpresas.Controllers
             _mapper = mapper;
         }
 
+        // READ (LISTAR TODOS) 
         [HttpGet]
-        public async Task<ActionResult<TreinamentoPaginacaoViewModel>> GetTreinamentos(
-         [FromQuery] int pagina = 1,
-         [FromQuery] int tamanho = 10)
+        public async Task<ActionResult<PagedResultViewModel<TreinamentoModel>>> GetTreinamentos(
+            [FromQuery] QueryParameters parameters)
         {
-            if (pagina < 1 || tamanho < 1)
-                return BadRequest("Página e tamanho devem ser maiores que zero.");
+           
+            var resultado = await _treinamentoService.GetAllTreinamentos(parameters);
 
-            var treinamentos = await _treinamentoService.ListarTreinamentosPaginado(pagina, tamanho);
-
-            var vm = _mapper.Map<IEnumerable<TreinamentoViewModel>>(treinamentos);
-
-            return Ok(new TreinamentoPaginacaoViewModel
-            {
-                Treinamentos = (IEnumerable<TreinamentoModel>)vm,
-                PaginaAtual = pagina,
-                TamanhoPagina = tamanho
-            });
+            return Ok(resultado);
         }
 
+        // READ (Por ID) - Antigo GetTreinamento
         [HttpGet("{id}")]
         public async Task<ActionResult<TreinamentoViewModel>> GetTreinamento(long id)
         {
-            var treinamento = await _treinamentoService.ObterTreinamentoPorId(id);
+            var treinamento = await _treinamentoService.GetTreinamentoById(id);
 
             if (treinamento == null)
                 return NotFound();
@@ -55,19 +54,22 @@ namespace Fiap.Api.InclusaoDiversidadeEmpresas.Controllers
             return Ok(_mapper.Map<TreinamentoViewModel>(treinamento));
         }
 
+        // POST (CREATE) -
         [HttpPost]
         [Authorize(Roles = "Admin")]
         public async Task<ActionResult<TreinamentoViewModel>> PostTreinamento(TreinamentoViewModel vm)
         {
             var model = _mapper.Map<TreinamentoModel>(vm);
 
-            var criado = await _treinamentoService.CriarTreinamento(model);
+            // Chamada do novo método
+            var criado = await _treinamentoService.AddTreinamento(model);
 
             var retorno = _mapper.Map<TreinamentoViewModel>(criado);
 
             return CreatedAtAction(nameof(GetTreinamento), new { id = criado.Id }, retorno);
         }
 
+        // PUT (UPDATE) 
         [HttpPut("{id}")]
         [Authorize(Roles = "Admin")]
         public async Task<IActionResult> PutTreinamento(long id, TreinamentoViewModel vm)
@@ -77,7 +79,8 @@ namespace Fiap.Api.InclusaoDiversidadeEmpresas.Controllers
 
             var model = _mapper.Map<TreinamentoModel>(vm);
 
-            var atualizado = await _treinamentoService.AtualizarTreinamento(id, model);
+           
+            var atualizado = await _treinamentoService.UpdateTreinamento(id, model);
 
             if (atualizado == null)
                 return NotFound();
@@ -85,11 +88,13 @@ namespace Fiap.Api.InclusaoDiversidadeEmpresas.Controllers
             return Ok(_mapper.Map<TreinamentoViewModel>(atualizado));
         }
 
+        // DELETE
         [HttpDelete("{id}")]
         [Authorize(Roles = "Admin")]
         public async Task<IActionResult> DeleteTreinamento(long id)
         {
-            var removido = await _treinamentoService.DeletarTreinamento(id);
+           
+            var removido = await _treinamentoService.DeleteTreinamento(id);
 
             if (!removido)
                 return NotFound();
