@@ -24,7 +24,7 @@ namespace Fiap.Api.InclusaoDiversidadeEmpresas.Services
             {
                 if (!await _databaseContext.Treinamentos.AnyAsync(e => e.Id == treinamento.Id))
                 {
-                    return null; 
+                    return null;
                 }
                 throw;
             }
@@ -55,7 +55,7 @@ namespace Fiap.Api.InclusaoDiversidadeEmpresas.Services
             _databaseContext.Treinamentos.Remove(treinamento);
 
 
-           
+
             try
             {
                 await _databaseContext.SaveChangesAsync();
@@ -63,7 +63,7 @@ namespace Fiap.Api.InclusaoDiversidadeEmpresas.Services
             }
             catch (DbUpdateException)
             {
-              
+
                 throw;
             }
 
@@ -72,10 +72,13 @@ namespace Fiap.Api.InclusaoDiversidadeEmpresas.Services
 
         }
 
-        public async Task<IEnumerable<TreinamentoModel>> ListarTreinamentos()
+        public async Task<IEnumerable<TreinamentoModel>> ListarTreinamentosPaginado(int pagina, int tamanho)
         {
-           return await _databaseContext.Treinamentos.Include(t => t.Participacao).ToListAsync();
-         
+            return await _databaseContext.Treinamentos
+                .OrderBy(t => t.Id)
+                .Skip((pagina - 1) * tamanho)
+                .Take(tamanho)
+                .ToListAsync();
         }
 
         public async Task<TreinamentoModel?> ObterTreinamentoPorId(long id)

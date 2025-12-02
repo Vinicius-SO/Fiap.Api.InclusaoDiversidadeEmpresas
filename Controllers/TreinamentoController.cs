@@ -1,16 +1,17 @@
 ﻿using Fiap.Api.InclusaoDiversidadeEmpresas.Services;
+using Fiap.Api.InclusaoDiversidadeEmpresas.ViewModel;
 using InclusaoDiversidadeEmpresas.Models;
+using Microsoft.AspNetCore.Authorization; // 👈 Adicione este using
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
-using Microsoft.AspNetCore.Authorization; // 👈 Adicione este using
 
 namespace Fiap.Api.InclusaoDiversidadeEmpresas.Controllers
 {
 
     [ApiController]
     [Route("api/[controller]")]
-    [Authorize] 
-    public class TreinamentoController : ControllerBase
+    [Authorize]
+    public class TreinamentoController : ControllerBase
     {
         private readonly ITreinamentoService _treinamentoService;
 
@@ -20,11 +21,24 @@ namespace Fiap.Api.InclusaoDiversidadeEmpresas.Controllers
         }
 
 
-        // GET: api/treinamento
-        [HttpGet]
-        public async Task<ActionResult<IEnumerable<TreinamentoModel>>> GetTreinamentos()
+        [HttpGet]
+        public async Task<ActionResult<TreinamentoPaginacaoViewModel>> GetTreinamentos(
+         [FromQuery] int pagina = 1,
+         [FromQuery] int tamanho = 10)
         {
-            return Ok(await _treinamentoService.ListarTreinamentos());
+            if (pagina < 1 || tamanho < 1)
+                return BadRequest("Página e tamanho devem ser maiores que zero.");
+
+            var treinamentos = await _treinamentoService.ListarTreinamentosPaginado(pagina, tamanho);
+
+            var resultado = new TreinamentoPaginacaoViewModel
+            {
+                Treinamentos = treinamentos,
+                PaginaAtual = pagina,
+                TamanhoPagina = tamanho
+            };
+
+            return Ok(resultado);
         }
 
         // GET: api/treinamento/{id}
@@ -49,7 +63,7 @@ namespace Fiap.Api.InclusaoDiversidadeEmpresas.Controllers
             return CreatedAtAction(nameof(GetTreinamento), new { id = criado.Id }, criado);
         }
 
-  
+
 
         // PUT: api/treinamento/{id}
         [HttpPut("{id}")]
@@ -67,7 +81,7 @@ namespace Fiap.Api.InclusaoDiversidadeEmpresas.Controllers
             return Ok(atualizado);
         }
 
-     
+
 
         // DELETE: api/treinamento/{id}
         [HttpDelete("{id}")]

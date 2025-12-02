@@ -440,32 +440,43 @@
         "tags": [
           "Treinamento"
         ],
+        "parameters": [
+          {
+            "name": "pagina",
+            "in": "query",
+            "schema": {
+              "type": "integer",
+              "format": "int32",
+              "default": 1
+            }
+          },
+          {
+            "name": "tamanho",
+            "in": "query",
+            "schema": {
+              "type": "integer",
+              "format": "int32",
+              "default": 10
+            }
+          }
+        ],
         "responses": {
           "200": {
             "description": "Success",
             "content": {
               "text/plain": {
                 "schema": {
-                  "type": "array",
-                  "items": {
-                    "$ref": "#/components/schemas/TreinamentoModel"
-                  }
+                  "$ref": "#/components/schemas/TreinamentoPaginacaoViewModel"
                 }
               },
               "application/json": {
                 "schema": {
-                  "type": "array",
-                  "items": {
-                    "$ref": "#/components/schemas/TreinamentoModel"
-                  }
+                  "$ref": "#/components/schemas/TreinamentoPaginacaoViewModel"
                 }
               },
               "text/json": {
                 "schema": {
-                  "type": "array",
-                  "items": {
-                    "$ref": "#/components/schemas/TreinamentoModel"
-                  }
+                  "$ref": "#/components/schemas/TreinamentoPaginacaoViewModel"
                 }
               }
             }
@@ -757,6 +768,45 @@
               "$ref": "#/components/schemas/ParticipacaoEmTreinamentoModel"
             },
             "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "TreinamentoPaginacaoViewModel": {
+        "type": "object",
+        "properties": {
+          "treinamentos": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/TreinamentoModel"
+            },
+            "nullable": true
+          },
+          "paginaAtual": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "tamanhoPagina": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "temPaginaAnterior": {
+            "type": "boolean",
+            "readOnly": true
+          },
+          "temProximaPagina": {
+            "type": "boolean",
+            "readOnly": true
+          },
+          "urlPaginaAnterior": {
+            "type": "string",
+            "nullable": true,
+            "readOnly": true
+          },
+          "urlProximaPagina": {
+            "type": "string",
+            "nullable": true,
+            "readOnly": true
           }
         },
         "additionalProperties": false
