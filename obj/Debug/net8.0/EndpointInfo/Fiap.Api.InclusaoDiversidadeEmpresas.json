@@ -226,32 +226,43 @@
         "tags": [
           "ParticipacaoEmTreinamento"
         ],
+        "parameters": [
+          {
+            "name": "pagina",
+            "in": "query",
+            "schema": {
+              "type": "integer",
+              "format": "int32",
+              "default": 1
+            }
+          },
+          {
+            "name": "tamanho",
+            "in": "query",
+            "schema": {
+              "type": "integer",
+              "format": "int32",
+              "default": 10
+            }
+          }
+        ],
         "responses": {
           "200": {
             "description": "Success",
             "content": {
               "text/plain": {
                 "schema": {
-                  "type": "array",
-                  "items": {
-                    "$ref": "#/components/schemas/ParticipacaoEmTreinamentoModel"
-                  }
+                  "$ref": "#/components/schemas/ParticipacaoPaginacaoViewModel"
                 }
               },
               "application/json": {
                 "schema": {
-                  "type": "array",
-                  "items": {
-                    "$ref": "#/components/schemas/ParticipacaoEmTreinamentoModel"
-                  }
+                  "$ref": "#/components/schemas/ParticipacaoPaginacaoViewModel"
                 }
               },
               "text/json": {
                 "schema": {
-                  "type": "array",
-                  "items": {
-                    "$ref": "#/components/schemas/ParticipacaoEmTreinamentoModel"
-                  }
+                  "$ref": "#/components/schemas/ParticipacaoPaginacaoViewModel"
                 }
               }
             }
@@ -739,6 +750,45 @@
             "type": "string",
             "format": "date-time",
             "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "ParticipacaoPaginacaoViewModel": {
+        "type": "object",
+        "properties": {
+          "participacoes": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/ParticipacaoEmTreinamentoModel"
+            },
+            "nullable": true
+          },
+          "paginaAtual": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "tamanhoPagina": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "temPaginaAnterior": {
+            "type": "boolean",
+            "readOnly": true
+          },
+          "temProximaPagina": {
+            "type": "boolean",
+            "readOnly": true
+          },
+          "urlPaginaAnterior": {
+            "type": "string",
+            "nullable": true,
+            "readOnly": true
+          },
+          "urlProximaPagina": {
+            "type": "string",
+            "nullable": true,
+            "readOnly": true
           }
         },
         "additionalProperties": false
