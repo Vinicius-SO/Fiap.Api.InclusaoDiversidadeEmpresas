@@ -1,4 +1,5 @@
 ﻿using InclusaoDiversidadeEmpresas.Models;
+using InclusaoDiversidadeEmpresas.ViewModels;
 
 namespace InclusaoDiversidadeEmpresas.Services
 {
@@ -9,7 +10,7 @@ namespace InclusaoDiversidadeEmpresas.Services
         Task<Colaborador> AddColaborador(Colaborador colaborador);
 
         // READ (Listar Todos)
-        Task<IEnumerable<Colaborador>> GetAllColaboradores();
+        Task<PagedResultViewModel<ColaboradorListaViewModel>> GetAllColaboradores(int page, int pageSize);
 
         // READ (Por ID)
         Task<Colaborador?> GetColaboradorById(long id);
