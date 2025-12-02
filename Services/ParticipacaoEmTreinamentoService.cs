@@ -52,11 +52,14 @@ namespace Fiap.Api.InclusaoDiversidadeEmpresas.Services
             return true;
         }
 
-        public async  Task<IEnumerable<ParticipacaoEmTreinamentoModel>> ListarParticipacaoEmTreinamentoService()
+        public async Task<IEnumerable<ParticipacaoEmTreinamentoModel>> ListarParticipacaoPaginado(int pagina, int tamanho)
         {
             return await _databaseContext.ParticipacoesEmTreinamento
                 .Include(p => p.Colaborador)
                 .Include(p => p.Treinamento)
+                .OrderBy(p => p.Id)
+                .Skip((pagina - 1) * tamanho)
+                .Take(tamanho)
                 .ToListAsync();
         }
 

@@ -1,7 +1,8 @@
 ﻿using Fiap.Api.InclusaoDiversidadeEmpresas.Services;
+using Fiap.Api.InclusaoDiversidadeEmpresas.ViewModel;
 using InclusaoDiversidadeEmpresas.Models;
-using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Authorization; 
+using Microsoft.AspNetCore.Mvc;
 
 namespace Fiap.Api.InclusaoDiversidadeEmpresas.Controllers
 {
@@ -18,11 +19,25 @@ namespace Fiap.Api.InclusaoDiversidadeEmpresas.Controllers
         }
 
 
-        // GET: api/participacaoemtreinamento
+        // GET paginado: api/participacao?pagina=1&tamanho=10
         [HttpGet]
-        public async Task<ActionResult<IEnumerable<ParticipacaoEmTreinamentoModel>>> GetParticipacoes()
+        public async Task<ActionResult<ParticipacaoPaginacaoViewModel>> GetParticipacoes(
+            [FromQuery] int pagina = 1,
+            [FromQuery] int tamanho = 10)
         {
-            return Ok(await _participacaoService.ListarParticipacaoEmTreinamentoService());
+            if (pagina < 1 || tamanho < 1)
+                return BadRequest("Página e tamanho devem ser maiores que zero.");
+
+            var participacoes = await _participacaoService.ListarParticipacaoPaginado(pagina, tamanho);
+
+            var resultado = new ParticipacaoPaginacaoViewModel
+            {
+                Participacoes = participacoes,
+                PaginaAtual = pagina,
+                TamanhoPagina = tamanho
+            };
+
+            return Ok(resultado);
         }
 
         // GET: api/participacaoemtreinamento/{id}
