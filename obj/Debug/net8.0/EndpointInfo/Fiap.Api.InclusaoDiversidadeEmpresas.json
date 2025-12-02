@@ -230,14 +230,60 @@
         }
       }
     },
-    "/api/ParticipacaoEmTreinamento": {
+    "/api/Participacao": {
+      "post": {
+        "tags": [
+          "Participacao"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/ParticipacaoViewModel"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/ParticipacaoViewModel"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/ParticipacaoViewModel"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/ParticipacaoViewModel"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ParticipacaoViewModel"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ParticipacaoViewModel"
+                }
+              }
+            }
+          }
+        }
+      },
       "get": {
         "tags": [
-          "ParticipacaoEmTreinamento"
+          "Participacao"
         ],
         "parameters": [
           {
-            "name": "pagina",
+            "name": "page",
             "in": "query",
             "schema": {
               "type": "integer",
@@ -246,7 +292,7 @@
             }
           },
           {
-            "name": "tamanho",
+            "name": "pageSize",
             "in": "query",
             "schema": {
               "type": "integer",
@@ -261,63 +307,26 @@
             "content": {
               "text/plain": {
                 "schema": {
-                  "$ref": "#/components/schemas/ParticipacaoPaginacaoViewModel"
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/ParticipacaoViewModel"
+                  }
                 }
               },
               "application/json": {
                 "schema": {
-                  "$ref": "#/components/schemas/ParticipacaoPaginacaoViewModel"
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/ParticipacaoViewModel"
+                  }
                 }
               },
               "text/json": {
                 "schema": {
-                  "$ref": "#/components/schemas/ParticipacaoPaginacaoViewModel"
-                }
-              }
-            }
-          }
-        }
-      },
-      "post": {
-        "tags": [
-          "ParticipacaoEmTreinamento"
-        ],
-        "requestBody": {
-          "content": {
-            "application/json": {
-              "schema": {
-                "$ref": "#/components/schemas/ParticipacaoEmTreinamentoModel"
-              }
-            },
-            "text/json": {
-              "schema": {
-                "$ref": "#/components/schemas/ParticipacaoEmTreinamentoModel"
-              }
-            },
-            "application/*+json": {
-              "schema": {
-                "$ref": "#/components/schemas/ParticipacaoEmTreinamentoModel"
-              }
-            }
-          }
-        },
-        "responses": {
-          "200": {
-            "description": "Success",
-            "content": {
-              "text/plain": {
-                "schema": {
-                  "$ref": "#/components/schemas/ParticipacaoEmTreinamentoModel"
-                }
-              },
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/ParticipacaoEmTreinamentoModel"
-                }
-              },
-              "text/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/ParticipacaoEmTreinamentoModel"
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/ParticipacaoViewModel"
+                  }
                 }
               }
             }
@@ -325,48 +334,10 @@
         }
       }
     },
-    "/api/ParticipacaoEmTreinamento/{id}": {
-      "get": {
-        "tags": [
-          "ParticipacaoEmTreinamento"
-        ],
-        "parameters": [
-          {
-            "name": "id",
-            "in": "path",
-            "required": true,
-            "schema": {
-              "type": "integer",
-              "format": "int64"
-            }
-          }
-        ],
-        "responses": {
-          "200": {
-            "description": "Success",
-            "content": {
-              "text/plain": {
-                "schema": {
-                  "$ref": "#/components/schemas/ParticipacaoEmTreinamentoModel"
-                }
-              },
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/ParticipacaoEmTreinamentoModel"
-                }
-              },
-              "text/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/ParticipacaoEmTreinamentoModel"
-                }
-              }
-            }
-          }
-        }
-      },
+    "/api/Participacao/{id}": {
       "put": {
         "tags": [
-          "ParticipacaoEmTreinamento"
+          "Participacao"
         ],
         "parameters": [
           {
@@ -383,47 +354,30 @@
           "content": {
             "application/json": {
               "schema": {
-                "$ref": "#/components/schemas/ParticipacaoEmTreinamentoModel"
+                "$ref": "#/components/schemas/ParticipacaoViewModel"
               }
             },
             "text/json": {
               "schema": {
-                "$ref": "#/components/schemas/ParticipacaoEmTreinamentoModel"
+                "$ref": "#/components/schemas/ParticipacaoViewModel"
               }
             },
             "application/*+json": {
               "schema": {
-                "$ref": "#/components/schemas/ParticipacaoEmTreinamentoModel"
+                "$ref": "#/components/schemas/ParticipacaoViewModel"
               }
             }
           }
         },
         "responses": {
           "200": {
-            "description": "Success",
-            "content": {
-              "text/plain": {
-                "schema": {
-                  "$ref": "#/components/schemas/ParticipacaoEmTreinamentoModel"
-                }
-              },
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/ParticipacaoEmTreinamentoModel"
-                }
-              },
-              "text/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/ParticipacaoEmTreinamentoModel"
-                }
-              }
-            }
+            "description": "Success"
           }
         }
       },
       "delete": {
         "tags": [
-          "ParticipacaoEmTreinamento"
+          "Participacao"
         ],
         "parameters": [
           {
@@ -807,41 +761,28 @@
         },
         "additionalProperties": false
       },
-      "ParticipacaoPaginacaoViewModel": {
+      "ParticipacaoViewModel": {
+        "required": [
+          "colaboradorId",
+          "treinamentoId"
+        ],
         "type": "object",
         "properties": {
-          "participacoes": {
-            "type": "array",
-            "items": {
-              "$ref": "#/components/schemas/ParticipacaoEmTreinamentoModel"
-            },
+          "colaboradorId": {
+            "type": "integer",
+            "format": "int64"
+          },
+          "treinamentoId": {
+            "type": "integer",
+            "format": "int64"
+          },
+          "completo": {
+            "type": "boolean"
+          },
+          "dataDeConclusao": {
+            "type": "string",
+            "format": "date-time",
             "nullable": true
-          },
-          "paginaAtual": {
-            "type": "integer",
-            "format": "int32"
-          },
-          "tamanhoPagina": {
-            "type": "integer",
-            "format": "int32"
-          },
-          "temPaginaAnterior": {
-            "type": "boolean",
-            "readOnly": true
-          },
-          "temProximaPagina": {
-            "type": "boolean",
-            "readOnly": true
-          },
-          "urlPaginaAnterior": {
-            "type": "string",
-            "nullable": true,
-            "readOnly": true
-          },
-          "urlProximaPagina": {
-            "type": "string",
-            "nullable": true,
-            "readOnly": true
           }
         },
         "additionalProperties": false

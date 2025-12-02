@@ -55,6 +55,8 @@ var mapperConfig = new MapperConfiguration(c =>
     // Mapeamentos
     c.CreateMap<TreinamentoModel, TreinamentoViewModel>();
     c.CreateMap<TreinamentoViewModel, TreinamentoModel>();
+    c.CreateMap<ParticipacaoEmTreinamentoModel, ParticipacaoViewModel>();
+    c.CreateMap<ParticipacaoViewModel, ParticipacaoEmTreinamentoModel>();
 });
 
 IMapper mapper = mapperConfig.CreateMapper();

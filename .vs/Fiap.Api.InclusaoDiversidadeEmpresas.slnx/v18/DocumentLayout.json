@@ -11,8 +11,23 @@
       "RelativeMoniker": "D:0:0:{A0B19613-3D87-D536-0518-27A18505A719}|Fiap.Api.InclusaoDiversidadeEmpresas.csproj|solutionrelative:appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A0B19613-3D87-D536-0518-27A18505A719}|Fiap.Api.InclusaoDiversidadeEmpresas.csproj|c:\\users\\pichau\\source\\repos\\fiap.api.inclusaodiversidadeempresas\\services\\treinamentoservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A0B19613-3D87-D536-0518-27A18505A719}|Fiap.Api.InclusaoDiversidadeEmpresas.csproj|solutionrelative:services\\treinamentoservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A0B19613-3D87-D536-0518-27A18505A719}|Fiap.Api.InclusaoDiversidadeEmpresas.csproj|c:\\users\\pichau\\source\\repos\\fiap.api.inclusaodiversidadeempresas\\models\\relatoriodediversidademodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A0B19613-3D87-D536-0518-27A18505A719}|Fiap.Api.InclusaoDiversidadeEmpresas.csproj|solutionrelative:models\\relatoriodediversidademodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Program Files\\dotnet\\sdk\\10.0.100\\Sdks\\Microsoft.NET.Sdk.StaticWebAssets\\targets\\Microsoft.NET.Sdk.StaticWebAssets.JSModules.targets||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A0B19613-3D87-D536-0518-27A18505A719}|Fiap.Api.InclusaoDiversidadeEmpresas.csproj|c:\\users\\pichau\\source\\repos\\fiap.api.inclusaodiversidadeempresas\\services\\relatorioservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A0B19613-3D87-D536-0518-27A18505A719}|Fiap.Api.InclusaoDiversidadeEmpresas.csproj|solutionrelative:services\\relatorioservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A0B19613-3D87-D536-0518-27A18505A719}|Fiap.Api.InclusaoDiversidadeEmpresas.csproj|c:\\users\\pichau\\source\\repos\\fiap.api.inclusaodiversidadeempresas\\services\\icolaboradorservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A0B19613-3D87-D536-0518-27A18505A719}|Fiap.Api.InclusaoDiversidadeEmpresas.csproj|solutionrelative:services\\icolaboradorservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A0B19613-3D87-D536-0518-27A18505A719}|Fiap.Api.InclusaoDiversidadeEmpresas.csproj|c:\\users\\pichau\\source\\repos\\fiap.api.inclusaodiversidadeempresas\\services\\colaboradorservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A0B19613-3D87-D536-0518-27A18505A719}|Fiap.Api.InclusaoDiversidadeEmpresas.csproj|solutionrelative:services\\colaboradorservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A0B19613-3D87-D536-0518-27A18505A719}|Fiap.Api.InclusaoDiversidadeEmpresas.csproj|c:\\users\\pichau\\source\\repos\\fiap.api.inclusaodiversidadeempresas\\services\\itreinamentoservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -23,8 +38,28 @@
       "RelativeMoniker": "D:0:0:{A0B19613-3D87-D536-0518-27A18505A719}|Fiap.Api.InclusaoDiversidadeEmpresas.csproj|solutionrelative:controllers\\treinamentocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A0B19613-3D87-D536-0518-27A18505A719}|Fiap.Api.InclusaoDiversidadeEmpresas.csproj|c:\\users\\pichau\\source\\repos\\fiap.api.inclusaodiversidadeempresas\\controllers\\relatorioscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A0B19613-3D87-D536-0518-27A18505A719}|Fiap.Api.InclusaoDiversidadeEmpresas.csproj|solutionrelative:controllers\\relatorioscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A0B19613-3D87-D536-0518-27A18505A719}|Fiap.Api.InclusaoDiversidadeEmpresas.csproj|c:\\users\\pichau\\source\\repos\\fiap.api.inclusaodiversidadeempresas\\controllers\\colaboradorcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A0B19613-3D87-D536-0518-27A18505A719}|Fiap.Api.InclusaoDiversidadeEmpresas.csproj|solutionrelative:controllers\\colaboradorcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A0B19613-3D87-D536-0518-27A18505A719}|Fiap.Api.InclusaoDiversidadeEmpresas.csproj|c:\\users\\pichau\\source\\repos\\fiap.api.inclusaodiversidadeempresas\\viewmodel\\colaboradorlistaviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A0B19613-3D87-D536-0518-27A18505A719}|Fiap.Api.InclusaoDiversidadeEmpresas.csproj|solutionrelative:viewmodel\\colaboradorlistaviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A0B19613-3D87-D536-0518-27A18505A719}|Fiap.Api.InclusaoDiversidadeEmpresas.csproj|c:\\users\\pichau\\source\\repos\\fiap.api.inclusaodiversidadeempresas\\viewmodel\\pagedresultviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A0B19613-3D87-D536-0518-27A18505A719}|Fiap.Api.InclusaoDiversidadeEmpresas.csproj|solutionrelative:viewmodel\\pagedresultviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A0B19613-3D87-D536-0518-27A18505A719}|Fiap.Api.InclusaoDiversidadeEmpresas.csproj|c:\\users\\pichau\\source\\repos\\fiap.api.inclusaodiversidadeempresas\\models\\queryparameters.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A0B19613-3D87-D536-0518-27A18505A719}|Fiap.Api.InclusaoDiversidadeEmpresas.csproj|solutionrelative:models\\queryparameters.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A0B19613-3D87-D536-0518-27A18505A719}|Fiap.Api.InclusaoDiversidadeEmpresas.csproj|c:\\users\\pichau\\source\\repos\\fiap.api.inclusaodiversidadeempresas\\services\\irelatorioservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A0B19613-3D87-D536-0518-27A18505A719}|Fiap.Api.InclusaoDiversidadeEmpresas.csproj|solutionrelative:services\\irelatorioservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A0B19613-3D87-D536-0518-27A18505A719}|Fiap.Api.InclusaoDiversidadeEmpresas.csproj|c:\\users\\pichau\\source\\repos\\fiap.api.inclusaodiversidadeempresas\\controllers\\participacaoemtreinamentocontroller .cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A0B19613-3D87-D536-0518-27A18505A719}|Fiap.Api.InclusaoDiversidadeEmpresas.csproj|solutionrelative:controllers\\participacaoemtreinamentocontroller .cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -54,7 +89,20 @@
               "RelativeToolTip": "appsettings.Development.json",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2025-12-02T17:42:56.383Z",
+              "WhenOpened": "2025-12-02T18:17:08.159Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "RelatorioDeDiversidadeModel.cs",
+              "DocumentMoniker": "C:\\Users\\Pichau\\source\\repos\\Fiap.Api.InclusaoDiversidadeEmpresas\\Models\\RelatorioDeDiversidadeModel.cs",
+              "RelativeDocumentMoniker": "Models\\RelatorioDeDiversidadeModel.cs",
+              "ToolTip": "C:\\Users\\Pichau\\source\\repos\\Fiap.Api.InclusaoDiversidadeEmpresas\\Models\\RelatorioDeDiversidadeModel.cs",
+              "RelativeToolTip": "Models\\RelatorioDeDiversidadeModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-02T18:15:34.194Z",
               "EditorCaption": ""
             },
             {
@@ -67,60 +115,153 @@
               "RelativeToolTip": "appsettings.json",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2025-12-02T17:42:53.294Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "TreinamentoService.cs",
-              "DocumentMoniker": "C:\\Users\\Pichau\\source\\repos\\Fiap.Api.InclusaoDiversidadeEmpresas\\Services\\TreinamentoService.cs",
-              "RelativeDocumentMoniker": "Services\\TreinamentoService.cs",
-              "ToolTip": "C:\\Users\\Pichau\\source\\repos\\Fiap.Api.InclusaoDiversidadeEmpresas\\Services\\TreinamentoService.cs",
-              "RelativeToolTip": "Services\\TreinamentoService.cs",
-              "ViewState": "AgIAABgAAAAAAAAAAAAAACsAAAAsAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-02T17:39:30.636Z",
+              "WhenOpened": "2025-12-02T18:13:07.841Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 3,
-              "Title": "ITreinamentoService.cs",
-              "DocumentMoniker": "C:\\Users\\Pichau\\source\\repos\\Fiap.Api.InclusaoDiversidadeEmpresas\\Services\\ITreinamentoService.cs",
-              "RelativeDocumentMoniker": "Services\\ITreinamentoService.cs",
-              "ToolTip": "C:\\Users\\Pichau\\source\\repos\\Fiap.Api.InclusaoDiversidadeEmpresas\\Services\\ITreinamentoService.cs",
-              "RelativeToolTip": "Services\\ITreinamentoService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-02T17:39:05.382Z",
+              "Title": "Microsoft.NET.Sdk.StaticWebAssets.JSModules.targets",
+              "DocumentMoniker": "C:\\Program Files\\dotnet\\sdk\\10.0.100\\Sdks\\Microsoft.NET.Sdk.StaticWebAssets\\targets\\Microsoft.NET.Sdk.StaticWebAssets.JSModules.targets",
+              "RelativeDocumentMoniker": "..\\..\\..\\..\\..\\Program Files\\dotnet\\sdk\\10.0.100\\Sdks\\Microsoft.NET.Sdk.StaticWebAssets\\targets\\Microsoft.NET.Sdk.StaticWebAssets.JSModules.targets",
+              "ToolTip": "C:\\Program Files\\dotnet\\sdk\\10.0.100\\Sdks\\Microsoft.NET.Sdk.StaticWebAssets\\targets\\Microsoft.NET.Sdk.StaticWebAssets.JSModules.targets",
+              "RelativeToolTip": "..\\..\\..\\..\\..\\Program Files\\dotnet\\sdk\\10.0.100\\Sdks\\Microsoft.NET.Sdk.StaticWebAssets\\targets\\Microsoft.NET.Sdk.StaticWebAssets.JSModules.targets",
+              "ViewState": "AgIAAKcBAAAAAAAAAAAuwKsBAAAEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003801|",
+              "WhenOpened": "2025-12-02T18:12:52.498Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 8,
               "Title": "TreinamentoController.cs",
               "DocumentMoniker": "C:\\Users\\Pichau\\source\\repos\\Fiap.Api.InclusaoDiversidadeEmpresas\\Controllers\\TreinamentoController.cs",
               "RelativeDocumentMoniker": "Controllers\\TreinamentoController.cs",
               "ToolTip": "C:\\Users\\Pichau\\source\\repos\\Fiap.Api.InclusaoDiversidadeEmpresas\\Controllers\\TreinamentoController.cs",
               "RelativeToolTip": "Controllers\\TreinamentoController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAF8AAAALAAAAAAAAAA==",
+              "ViewState": "AgIAADIAAAAAAAAAAAAwwAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-02T17:37:29.656Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-12-02T18:07:55.087Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "ColaboradorController.cs",
+              "DocumentMoniker": "C:\\Users\\Pichau\\source\\repos\\Fiap.Api.InclusaoDiversidadeEmpresas\\Controllers\\ColaboradorController.cs",
+              "RelativeDocumentMoniker": "Controllers\\ColaboradorController.cs",
+              "ToolTip": "C:\\Users\\Pichau\\source\\repos\\Fiap.Api.InclusaoDiversidadeEmpresas\\Controllers\\ColaboradorController.cs",
+              "RelativeToolTip": "Controllers\\ColaboradorController.cs",
+              "ViewState": "AgIAADIAAAAAAAAAAAAuwFQAAAA7AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-02T18:03:33.203Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 5,
-              "Title": "RelatoriosController.cs",
-              "DocumentMoniker": "C:\\Users\\Pichau\\source\\repos\\Fiap.Api.InclusaoDiversidadeEmpresas\\Controllers\\RelatoriosController.cs",
-              "RelativeDocumentMoniker": "Controllers\\RelatoriosController.cs",
-              "ToolTip": "C:\\Users\\Pichau\\source\\repos\\Fiap.Api.InclusaoDiversidadeEmpresas\\Controllers\\RelatoriosController.cs",
-              "RelativeToolTip": "Controllers\\RelatoriosController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAACQAAAAFAAAAAAAAAA==",
+              "Title": "IColaboradorService.cs",
+              "DocumentMoniker": "C:\\Users\\Pichau\\source\\repos\\Fiap.Api.InclusaoDiversidadeEmpresas\\Services\\IColaboradorService.cs",
+              "RelativeDocumentMoniker": "Services\\IColaboradorService.cs",
+              "ToolTip": "C:\\Users\\Pichau\\source\\repos\\Fiap.Api.InclusaoDiversidadeEmpresas\\Services\\IColaboradorService.cs",
+              "RelativeToolTip": "Services\\IColaboradorService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-01T17:45:16.487Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-12-02T18:03:05.517Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "ColaboradorService.cs",
+              "DocumentMoniker": "C:\\Users\\Pichau\\source\\repos\\Fiap.Api.InclusaoDiversidadeEmpresas\\Services\\ColaboradorService.cs",
+              "RelativeDocumentMoniker": "Services\\ColaboradorService.cs",
+              "ToolTip": "C:\\Users\\Pichau\\source\\repos\\Fiap.Api.InclusaoDiversidadeEmpresas\\Services\\ColaboradorService.cs",
+              "RelativeToolTip": "Services\\ColaboradorService.cs",
+              "ViewState": "AgIAAD0AAAAAAAAAAAAmwG0AAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-02T17:50:35.284Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "ColaboradorListaViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\Pichau\\source\\repos\\Fiap.Api.InclusaoDiversidadeEmpresas\\ViewModel\\ColaboradorListaViewModel.cs",
+              "RelativeDocumentMoniker": "ViewModel\\ColaboradorListaViewModel.cs",
+              "ToolTip": "C:\\Users\\Pichau\\source\\repos\\Fiap.Api.InclusaoDiversidadeEmpresas\\ViewModel\\ColaboradorListaViewModel.cs",
+              "RelativeToolTip": "ViewModel\\ColaboradorListaViewModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-02T17:49:57.757Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "ITreinamentoService.cs",
+              "DocumentMoniker": "C:\\Users\\Pichau\\source\\repos\\Fiap.Api.InclusaoDiversidadeEmpresas\\Services\\ITreinamentoService.cs",
+              "RelativeDocumentMoniker": "Services\\ITreinamentoService.cs",
+              "ToolTip": "C:\\Users\\Pichau\\source\\repos\\Fiap.Api.InclusaoDiversidadeEmpresas\\Services\\ITreinamentoService.cs",
+              "RelativeToolTip": "Services\\ITreinamentoService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-02T17:50:25.841Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "RelatorioService.cs",
+              "DocumentMoniker": "C:\\Users\\Pichau\\source\\repos\\Fiap.Api.InclusaoDiversidadeEmpresas\\Services\\RelatorioService.cs",
+              "RelativeDocumentMoniker": "Services\\RelatorioService.cs",
+              "ToolTip": "C:\\Users\\Pichau\\source\\repos\\Fiap.Api.InclusaoDiversidadeEmpresas\\Services\\RelatorioService.cs",
+              "RelativeToolTip": "Services\\RelatorioService.cs",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAswBcAAABBAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-02T17:51:18.171Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "PagedResultViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\Pichau\\source\\repos\\Fiap.Api.InclusaoDiversidadeEmpresas\\ViewModel\\PagedResultViewModel.cs",
+              "RelativeDocumentMoniker": "ViewModel\\PagedResultViewModel.cs",
+              "ToolTip": "C:\\Users\\Pichau\\source\\repos\\Fiap.Api.InclusaoDiversidadeEmpresas\\ViewModel\\PagedResultViewModel.cs",
+              "RelativeToolTip": "ViewModel\\PagedResultViewModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-02T18:04:14.726Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "QueryParameters.cs",
+              "DocumentMoniker": "C:\\Users\\Pichau\\source\\repos\\Fiap.Api.InclusaoDiversidadeEmpresas\\Models\\QueryParameters.cs",
+              "RelativeDocumentMoniker": "Models\\QueryParameters.cs",
+              "ToolTip": "C:\\Users\\Pichau\\source\\repos\\Fiap.Api.InclusaoDiversidadeEmpresas\\Models\\QueryParameters.cs",
+              "RelativeToolTip": "Models\\QueryParameters.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-02T18:04:01.414Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "IRelatorioService.cs",
+              "DocumentMoniker": "C:\\Users\\Pichau\\source\\repos\\Fiap.Api.InclusaoDiversidadeEmpresas\\Services\\IRelatorioService.cs",
+              "RelativeDocumentMoniker": "Services\\IRelatorioService.cs",
+              "ToolTip": "C:\\Users\\Pichau\\source\\repos\\Fiap.Api.InclusaoDiversidadeEmpresas\\Services\\IRelatorioService.cs",
+              "RelativeToolTip": "Services\\IRelatorioService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-02T18:02:30.495Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "ParticipacaoEmTreinamentoController .cs",
+              "DocumentMoniker": "C:\\Users\\Pichau\\source\\repos\\Fiap.Api.InclusaoDiversidadeEmpresas\\Controllers\\ParticipacaoEmTreinamentoController .cs",
+              "RelativeDocumentMoniker": "Controllers\\ParticipacaoEmTreinamentoController .cs",
+              "ToolTip": "C:\\Users\\Pichau\\source\\repos\\Fiap.Api.InclusaoDiversidadeEmpresas\\Controllers\\ParticipacaoEmTreinamentoController .cs",
+              "RelativeToolTip": "Controllers\\ParticipacaoEmTreinamentoController .cs",
+              "ViewState": "AgIAAAoAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-02T17:45:34.756Z"
             }
           ]
         }

@@ -2,9 +2,9 @@
 
 using InclusaoDiversidadeEmpresas.Data;
 using Fiap.Api.InclusaoDiversidadeEmpresas.Models;
-using Fiap.Api.InclusaoDiversidadeEmpresas.ViewModels;
+using Fiap.Api.InclusaoDiversidadeEmpresas.ViewModels; // Para PagedResultViewModel
 using InclusaoDiversidadeEmpresas.Models;
-using InclusaoDiversidadeEmpresas.ViewModels;
+using InclusaoDiversidadeEmpresas.ViewModels; // Para ColaboradorListaViewModel
 using Microsoft.EntityFrameworkCore;
 using System.Collections.Generic;
 using System.Linq;
@@ -30,16 +30,17 @@ namespace Fiap.Api.InclusaoDiversidadeEmpresas.Services
             return colaborador;
         }
 
-        // READ (Listar Todos)
+        // READ (Listar Todos) - Implementação da Paginação (QueryParameters)
         public async Task<PagedResultViewModel<ColaboradorListaViewModel>> GetAllColaboradores(QueryParameters parameters)
         {
+            // 1. Conta o total de itens para calcular as páginas
             var totalItems = await _context.Colaboradores.CountAsync();
 
-           
+            // 2. Define PageNumber e PageSize (Defensivo, baseado em QueryParameters)
             int page = parameters.PageNumber < 1 ? 1 : parameters.PageNumber;
             int pageSize = parameters.PageSize;
 
-         
+            // 3. Aplica Paginação (Skip e Take) e mapeamento (Select)
             var items = await _context.Colaboradores
                 .Skip((page - 1) * pageSize)
                 .Take(pageSize)
@@ -49,14 +50,14 @@ namespace Fiap.Api.InclusaoDiversidadeEmpresas.Services
                     Nome = c.NomeColaborador,
                     Departamento = c.Departamento,
                     Email = c.Email,
-                   
+                    // CAMPOS DE DIVERSIDADE MANTIDOS E NECESSÁRIOS PARA O RELATÓRIO:
                     GeneroColaborador = c.GeneroColaborador,
                     EtniaColaborador = c.EtniaColaborador,
                     TemDisabilidade = c.TemDisabilidade
                 })
                 .ToListAsync();
 
-           
+            // 4. Monta o pacote de resposta PagedResultViewModel
             return new PagedResultViewModel<ColaboradorListaViewModel>
             {
                 Items = items,
@@ -72,7 +73,7 @@ namespace Fiap.Api.InclusaoDiversidadeEmpresas.Services
             return await _context.Colaboradores.FindAsync(id);
         }
 
-        // UPDATE 
+        // UPDATE
         public async Task<Colaborador?> UpdateColaborador(Colaborador colaborador)
         {
             _context.Entry(colaborador).State = EntityState.Modified;
@@ -83,7 +84,7 @@ namespace Fiap.Api.InclusaoDiversidadeEmpresas.Services
             }
             catch (DbUpdateConcurrencyException)
             {
-              
+                // Se o item não existir, retorna null
                 if (!await _context.Colaboradores.AnyAsync(e => e.Id == colaborador.Id))
                 {
                     return null;
